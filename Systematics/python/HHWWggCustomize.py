@@ -54,7 +54,8 @@ class HHWWggCustomize():
             "TwoGoodEles:= Cut_Variables[15]",
             "passLepDR:= Cut_Variables[16]",
             "passMetPt:= Cut_Variables[17]",
-	    "FL_Lep_Flavor :=Cut_Variables[18]"
+	    "FL_Lep_Flavor :=Cut_Variables[18]",
+            "passSumpT :=Cut_Variables[19]"
         ]
 
         #-- b scores
@@ -157,7 +158,7 @@ class HHWWggCustomize():
 
           # DiPhoton(s)
         #  "n_dipho                             := diphoVector.size()",
-        #  "dipho_MVA                           := dipho_MVA()",
+           "dipho_pt                           := dipho_pt()",
         #  "CMS_hgg_mass                        := CMS_hgg_mass() ", # for cuts within HHWWggCandidate.cc before workspace
        #   "leading_dpho_pt                     := ? leading_dpho.pt() != 0 ? leading_dpho.pt() : -99",
         #  "leading_dpho_eta                    := ? leading_dpho.eta() != 0 ? leading_dpho.eta() : -99",
@@ -167,10 +168,16 @@ class HHWWggCustomize():
           # Electrons
           # If there is no leading electron (electronVector_.size() == 0) or no subleading electron (electronVector_.size() <= 1) plot -99
           "Leading_lepton_pt                     := Leading_lepton.pt() ",
+          "Leading_lepton_px                     := Leading_lepton.px() ",
+          "Leading_lepton_py                     := Leading_lepton.py() ",
+          "Leading_lepton_pz                     := Leading_lepton.pz() ",
           "Leading_lepton_eta                    := Leading_lepton.eta()",
           "Leading_lepton_phi                    := Leading_lepton.phi()",
           "Leading_lepton_E                      := Leading_lepton.E()",
           "Subleading_lepton_pt                  := Subleading_lepton.pt()",
+          "Subleading_lepton_px                  := Subleading_lepton.px()",
+          "Subleading_lepton_py                  := Subleading_lepton.py()",
+          "Subleading_lepton_pz                  := Subleading_lepton.pz()",
           "Subleading_lepton_eta                 := Subleading_lepton.eta()",
           "Subleading_lepton_phi                 := Subleading_lepton.phi()",
           "Subleading_lepton_E                   := Subleading_lepton.E()",
@@ -315,8 +322,8 @@ class HHWWggCustomize():
             # variables += bScores
 
         if self.customize.saveHHWWggFinalStateVars:
-            variables += finalStateVars
-            variables += HHVariables
+            #  variables += finalStateVars
+            #  variables += HHVariables
             variables += cutFlowVars
             if self.customize.HHWWggAnalysisChannel == "FL": variables += FL_vars
 

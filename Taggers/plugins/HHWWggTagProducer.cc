@@ -63,7 +63,6 @@ namespace flashgg {
     edm::Service<TFileService> fs;
 
     // TH1F* indexes;
-    // TH2F* diphopTs;
 
   private:
     double genTotalWeight;
@@ -179,11 +178,13 @@ namespace flashgg {
     double lep1ptThre_;
     double lep2ptThre_;
     double lep3ptThre_;
-    double DiLepMassThre_;
+    double DiLepMassHigThre_;
+    double DiLepMassLowThre_;
     double DiLepPtThre_;
     double MassTThre_;
     double MassT_l2Thre_;
     double dipho_MVA;
+    double Dipho_pT_Thre_;
     edm::InputTag genInfo_;
     edm::EDGetTokenT<GenEventInfoProduct> genInfoToken_;
   };
@@ -247,10 +248,7 @@ namespace flashgg {
 
       genInfo_ = pSet.getUntrackedParameter<edm::InputTag>( "genInfo", edm::InputTag("generator") );
       genInfoToken_ = consumes<GenEventInfoProduct>( genInfo_ );
-      // diphopt = fs->make<TH1F> ("diphopt", "diphopt", 500,0,500);
-      // phoptsum = fs->make<TH1F> ("phoptsum", "phoptsum", 500,0,500);
-
-      // diphopTs = fs->make<TH2F> ("diphopTs","diphoton pTs", 50,0,500,50,0,500); // for looking at dipho pT and sum of dipho photon pTs
+      // numDiphoCand = fs->make<TH1F> ("numDiphoCand","numDiphoCand",10,0,10);
 
       // WTags = fs->make<TH1F> ("WTags","W Tags",3,0,3);
       EB_Photon_MVA_Threshold_ =pSet.getParameter<double>( "EB_Photon_MVA_Threshold");
@@ -300,9 +298,11 @@ namespace flashgg {
       lep2ptThre_ = pSet.getParameter<double>("lep2ptThre");//means > lep2pt
       lep3ptThre_ = pSet.getParameter<double>("lep3ptThre");//means < lep3pt
       DiLepPtThre_ = pSet.getParameter<double>("DiLepPtThre");
-      DiLepMassThre_ = pSet.getParameter<double>("DiLepMassThre");
+      DiLepMassHigThre_ = pSet.getParameter<double>("DiLepMassHigThre");
+      DiLepMassLowThre_ = pSet.getParameter<double>("DiLepMassLowThre");
       MassTThre_ = pSet.getParameter<double>("MassTThre");
       MassT_l2Thre_ = pSet.getParameter<double>("MassT_l2Thre");
+      Dipho_pT_Thre_ = pSet.getParameter<double>("Dipho_pT_Thre"); 
       produces<vector<HHWWggTag>>();
       // for (auto & systname : systematicsLabels) { // to deal with systematics in producer
       //     produces<vector<HHWWggTag>>(systname);
@@ -585,9 +585,9 @@ namespace flashgg {
     double Event_num = 1;
     void HHWWggTagProducer::produce( Event &event, const EventSetup & )
     {
+      bool DEBUG = false;
 
-      // if (doHHWWggDebug_) cout << "[INFO][HHWWggTagProducer.cc] - Beginning of HHWWggTagProducer::produce" <<Event_num<< endl;
-      if (doHHWWggDebug_) cout << "[HHWWggTagProducer.cc] - systLabel: " << systLabel_ << endl;  
+      if (DEBUG) cout << "[INFO][HHWWggTagProducer.cc] - Beginning of HHWWggTagProducer::produce" <<Event_num<< endl;
 
       // Get particle objects
       event.getByToken( photonToken_, photons );
@@ -609,7 +609,7 @@ namespace flashgg {
 
       // Set cut booleans
       // std::vector<double> Cut_Results = {1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0}; // Cut_Results[i] = 1: Event Passed Cut i
-      std::vector<double> Cut_Variables(20,0.0); // Cut_Results[i] = 1.0: Event Passed Cut i
+      std::vector<double> Cut_Variables(21,0.0); // Cut_Results[i] = 1.0: Event Passed Cut i
       // std::vector<double> Vertex_Variables(20,0.0); // Cut_Results[i] = 1.0: Event Passed Cut i
       std::vector<double> MuonVars; // For saving Muon ID's and isolation
       std::vector<double> JetVars;
@@ -626,10 +626,9 @@ namespace flashgg {
       int n_good_jets = 0;
       bool hasHighbTag = 0;
       float btagVal = 0;
-      double leadPho_pt = 0;
-      double subleadPho_pt = 0;
+      // double leadPho_pt = 0;
+      // double subleadPho_pt = 0;
       double sumpT = 0;
-      double diPho_pT = 0;
 
       // Electrons
 
@@ -768,23 +767,6 @@ namespace flashgg {
 
         // if (diPhotons->size() > 0){ // for each systematic
 
-      // if(doHHWWggDebug_){
-    
-      //   for( unsigned int diphoIndex = 0; diphoIndex < diphotons->size(); diphoIndex++ ){
-      //     edm::Ptr<flashgg::DiPhotonCandidate> dipho = diphotons->ptrAt( diphoIndex );
-      //     const flashgg::Photon* leadPho = dipho->leadingPhoton();
-      //     const flashgg::Photon* subleadPho = dipho->subLeadingPhoton();     
-      //     diPho_pT = dipho->pt();
-      //     // cout << "dipho " << diphoIndex << " pT: " << diPho_pT << endl;
-      //     leadPho_pt = leadPho->pt();
-      //     subleadPho_pt = subleadPho->pt();
-      //     sumpT = leadPho_pt + subleadPho_pt; 
-      //     // cout << "dipho " << diphoIndex << " sum pT: " << sumpT << endl;     
-      //     // diphopTs->Fill(diPho_pT,sumpT);  
-      //   }
-
-      // }
-
         if (diphotons->size() > 0){
         for( unsigned int diphoIndex = 0; diphoIndex < 1; diphoIndex++ )
         { // only look at highest sumpt dipho
@@ -808,10 +790,15 @@ namespace flashgg {
           const flashgg::Photon* subleadPho = dipho->subLeadingPhoton();
 
           if(doHHWWggNonResAnalysis_){
-            leadPho_pt = leadPho->pt();
-            subleadPho_pt = subleadPho->pt();
-            sumpT = leadPho_pt + subleadPho_pt;
-            if(!doHHWWggTagCutFlowAnalysis_ && sumpT < 100.) continue; // if not doing cut flow analysis to save events, remove event
+            // leadPho_pt = leadPho->pt();
+            // subleadPho_pt = subleadPho->pt();
+            // sumpT = leadPho_pt + subleadPho_pt;
+            sumpT = dipho->pt();
+            cout<<"Dipho Pt"<<sumpT<<endl;
+            if(sumpT < Dipho_pT_Thre_){
+            Cut_Variables[19]=0;}
+            else Cut_Variables[19]=1;
+            if(!doHHWWggTagCutFlowAnalysis_ && sumpT < Dipho_pT_Thre_) continue; // if not doing cut flow analysis to save events, remove event
           }
 
           //-- MVA selections
@@ -830,7 +817,7 @@ namespace flashgg {
 
           // Doing cut flow analysis: Don't skip event, but check if photon selections are passed
           if(doHHWWggTagCutFlowAnalysis_){
-            if(!passMVAs || !pass_leadPhoOverMassThreshold || !pass_subleadPhoOverMassThreshold) Cut_Variables[1] = 0.0; // failed photon selections
+            if(!passMVAs || !pass_leadPhoOverMassThreshold || !pass_subleadPhoOverMassThreshold) {Cut_Variables[1] = 0.0;continue;} // failed photon selections 
             else Cut_Variables[1] = 1.0; // passed photon selections
           }
 
@@ -999,7 +986,7 @@ namespace flashgg {
             else
               Cut_Variables[2] = 1.0; // passes bveto
           }
-          else if(hasHighbTag) continue; // Skip event if it has at least one jet with a btag above threshold, and you're not doing a cut flow analysis
+          //else if(hasHighbTag) continue; // Skip event if it has at least one jet with a btag above threshold, and you're not doing a cut flow analysis
           n_good_jets = tagJets.size();
 
           // MET
@@ -1042,7 +1029,7 @@ namespace flashgg {
           /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
           //-- Categorize Events
-          if (doHHWWggDebug_) std::cout << "[INFO] n_good_leptons = " << n_good_leptons << ",\t n_good_jets = " << n_good_jets << std::endl;
+          if (DEBUG) std::cout << "[INFO] n_good_leptons = " << n_good_leptons << ",\t n_good_jets = " << n_good_jets << std::endl;
 
           //-- Semi-Leptonic Final state tags
           if(HHWWggAnalysisChannel_ == "SL")
@@ -1159,7 +1146,7 @@ namespace flashgg {
           // Fully Leptonic Final State Tags 
 
           if(HHWWggAnalysisChannel_ == "FL")
-          {  
+          { cout<<"start FL sels"<<endl;  
             int catnum = 3;
             Ptr<flashgg::Met> theMET = METs->ptrAt( 0 );
             if ( (n_good_leptons >=2 ) && (theMET->getCorPt() >= MetPtThreshold_) && num_FL_dr>=1 && (leadPho->p4().pt()+subleadPho->p4().pt())>0){
@@ -1219,11 +1206,12 @@ namespace flashgg {
                 reco::Candidate::LorentzVector DiEleLV = Ele1LV +  Ele2LV;
                 MassT= sqrt(2*DiEleLV.Pt()*theMET->pt()*(1-cos(abs(DiEleLV.Phi()-theMET->phi()))));
                 MassT_l2 = sqrt(2*Ele2LV.Pt()*theMET->pt()*(1-cos(abs(Ele2LV.Phi()-theMET->phi()))));
-                  if((tag_electron1->charge()*tag_electron2->charge()==-1) && tag_electron1->pt()>=lep1ptThre_ && tag_electron2->pt()>=lep1ptThre_  && DiEleLV.Pt()>DiLepPtThre_ && DiEleLV.M()>DiLepMassThre_ && MassT>MassTThre_ && MassT_l2 >MassT_l2Thre_ && Save == 1. && Savejet==1){
+                cout<<"DiLepMass:"<<DiEleLV.M()<<endl;
+                  if((tag_electron1->charge()*tag_electron2->charge()==-1) && tag_electron1->pt()>=lep1ptThre_ && tag_electron2->pt()>=lep1ptThre_  && DiEleLV.Pt()>DiLepPtThre_ && (DiEleLV.M() > DiLepMassHigThre_ || DiEleLV.M() < DiLepMassLowThre_ )&& MassT>MassTThre_ && MassT_l2 >MassT_l2Thre_ && Save == 1. && Savejet==1){
                     HHWWggTag tag_obj;
 
                     if(doHHWWggTagCutFlowAnalysis_){
-                      Cut_Variables[18]=0.;
+                      Cut_Variables[18]=1.;
                       HHWWggTag tag_obj_(dipho, tag_electron1, tag_electron2, theMET,Cut_Variables,dipho_MVA); 
                       tag_obj = tag_obj_;                  
                     }
@@ -1238,6 +1226,8 @@ namespace flashgg {
                   tag_obj.setMVA( -0.9 );
                   tag_obj.setCategoryNumber( catnum );
                   tag_obj.includeWeights( *dipho );
+                  tag_obj.includeWeights( *tag_electron1 );
+                  tag_obj.includeWeights( *tag_electron2 );
                   HHWWggtags->push_back( tag_obj );
                   if( ! event.isRealData() ) {
                     HHWWggtags->back().setTagTruth( edm::refToPtr( edm::Ref<vector<TagTruthBase> >( rTagTruth, 0 ) ) );
@@ -1289,11 +1279,12 @@ namespace flashgg {
                 reco::Candidate::LorentzVector DiMuLV = Mu1LV +  Mu2LV;
                 MassT= sqrt(2*DiMuLV.Pt()*theMET->pt()*(1-cos(abs(DiMuLV.Phi()-theMET->phi()))));
                 MassT_l2 = sqrt(2*Mu2LV.Pt()*theMET->pt()*(1-cos(abs(Mu2LV.Phi()-theMET->phi()))));
-                if((tag_muon1->charge()*tag_muon2->charge() == -1) && tag_muon1->pt()>=lep1ptThre_ && tag_muon2->pt()>=lep2ptThre_  && DiMuLV.Pt()>DiLepPtThre_ && DiMuLV.M()>DiLepMassThre_ && MassT>MassTThre_ && MassT_l2>MassT_l2Thre_ && Save == 1. && Savejet==1){
+                cout<<"DiLepMass:"<<DiMuLV.M()<<endl;
+                if((tag_muon1->charge()*tag_muon2->charge() == -1) && tag_muon1->pt()>=lep1ptThre_ && tag_muon2->pt()>=lep2ptThre_  && DiMuLV.Pt()>DiLepPtThre_ && ( DiMuLV.M() < DiLepMassLowThre_ || DiMuLV.M() > DiLepMassHigThre_) && MassT>MassTThre_ && MassT_l2>MassT_l2Thre_ && Save == 1. && Savejet==1){
                   HHWWggTag tag_obj;
 
                   if(doHHWWggTagCutFlowAnalysis_){
-                    Cut_Variables[18]=1.;
+                    Cut_Variables[18]=2.;
                     HHWWggTag tag_obj_(dipho, tag_muon1, tag_muon2, theMET,Cut_Variables,dipho_MVA);
                     tag_obj = tag_obj_;
                   }
@@ -1306,6 +1297,8 @@ namespace flashgg {
                   tag_obj.setMVA( -0.9 );
                   tag_obj.setCategoryNumber( catnum);
                   tag_obj.includeWeights( *dipho );
+                  tag_obj.includeWeights( *tag_muon1 );
+                  tag_obj.includeWeights( *tag_muon2 );
                   HHWWggtags->push_back( tag_obj );
 
                   if( ! event.isRealData() ) {
@@ -1360,11 +1353,12 @@ namespace flashgg {
                 reco::Candidate::LorentzVector DiLepLV = EleLV +  MuLV;
                 MassT= sqrt(2*DiLepLV.Pt()*theMET->pt()*(1-cos(abs(DiLepLV.Phi()-theMET->phi()))));
                 MassT_l2= sqrt(2*MuLV.Pt()*theMET->pt()*(1-cos(abs(MuLV.Phi()-theMET->phi()))));
-                if((((tag_electron1->pt()>=lep1ptThre_) && (tag_muon1->pt()>=lep2ptThre_))||((tag_muon1->pt()>=lep1ptThre_) && (tag_electron1->pt()>=lep2ptThre_))) && (tag_muon1->charge()*tag_electron1->charge()==-1) && (DiLepLV.M()>DiLepMassThre_) && (DiLepLV.Pt()>DiLepPtThre_) && (MassT_l2>MassTThre_) && (MassT>MassT_l2Thre_) && (Save==1.) &&(Savejet==1)){
+                cout<<"DiLepMass:"<<DiLepLV.M()<<endl;
+                if((((tag_electron1->pt()>=lep1ptThre_) && (tag_muon1->pt()>=lep2ptThre_))||((tag_muon1->pt()>=lep1ptThre_) && (tag_electron1->pt()>=lep2ptThre_))) && (tag_muon1->charge()*tag_electron1->charge()==-1) && (DiLepLV.M() < DiLepMassLowThre_ || DiLepLV.M() > DiLepMassHigThre_) && (DiLepLV.Pt()>DiLepPtThre_) && (MassT_l2>MassTThre_) && (MassT>MassT_l2Thre_) && (Save==1.) &&(Savejet==1)){
                   HHWWggTag tag_obj;
                   if(doHHWWggTagCutFlowAnalysis_){
-                    if(tag_electron1->pt()>tag_muon1->pt()) Cut_Variables[18]=2.;//e mu
-                    else Cut_Variables[18]=3.; //mu e
+                    if(tag_electron1->pt()>tag_muon1->pt()) Cut_Variables[18]=3.;//e mu
+                    else Cut_Variables[18]=4.; //mu e
                     HHWWggTag tag_obj_(dipho, tag_electron1, tag_muon1, theMET,Cut_Variables,dipho_MVA);
                     tag_obj = tag_obj_; 
                   }
@@ -1376,6 +1370,8 @@ namespace flashgg {
                   tag_obj.setDiPhotonIndex( diphoIndex );
                   tag_obj.setMVA( -0.9 );
                   tag_obj.setCategoryNumber( catnum );
+                  tag_obj.includeWeights( *tag_electron1);
+                  tag_obj.includeWeights( *tag_muon1);
                   tag_obj.includeWeights( *dipho );
                   HHWWggtags->push_back( tag_obj );
 
@@ -1388,8 +1384,9 @@ namespace flashgg {
         }//FL selection
 
           // Untagged category
-          else {
+          // else {
             if(doHHWWggTagCutFlowAnalysis_){
+              cout<<"start Untagged"<<endl;
               catnum = 4;
               HHWWggTag tag_obj(dipho, allElectrons, goodElectrons, allMuons, goodMuons, theMET, allJets, tagJets, Cut_Variables, MuonVars, JetVars);
               tag_obj.setSystLabel(systLabel_);
@@ -1402,7 +1399,7 @@ namespace flashgg {
                 HHWWggtags->back().setTagTruth( edm::refToPtr( edm::Ref<vector<TagTruthBase> >( rTagTruth, 0 ) ) );
               }
             }
-          } // Untagged category
+          // } // Untagged category
 
         } // Diphoton loop //add cut flow below this line
       } // if at least 1 PS diphoton
