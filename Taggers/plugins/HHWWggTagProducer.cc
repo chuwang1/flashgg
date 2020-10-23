@@ -181,7 +181,8 @@ namespace flashgg {
     double lep1ptThre_;
     double lep2ptThre_;
     double lep3ptThre_;
-    double DiLepMassThre_;
+    double DiLepMassHigThre_;
+    double DiLepMassLowThre_;
     double DiLepPtThre_;
     double MassTThre_;
     double MassT_l2Thre_;
@@ -308,7 +309,8 @@ namespace flashgg {
       lep2ptThre_ = pSet.getParameter<double>("lep2ptThre");//means > lep2pt
       lep3ptThre_ = pSet.getParameter<double>("lep3ptThre");//means < lep3pt
       DiLepPtThre_ = pSet.getParameter<double>("DiLepPtThre");
-      DiLepMassThre_ = pSet.getParameter<double>("DiLepMassThre");
+      DiLepMassLowThre_ = pSet.getParameter<double>("DiLepMassLowThre");
+      DiLepMassHigThre_ = pSet.getParameter<double>("DiLepMassHigThre");
       MassTThre_ = pSet.getParameter<double>("MassTThre");
       MassT_l2Thre_ = pSet.getParameter<double>("MassT_l2Thre");
       produces<vector<HHWWggTag>>();
@@ -1255,7 +1257,7 @@ namespace flashgg {
                 reco::Candidate::LorentzVector DiEleLV = Ele1LV +  Ele2LV;
                 MassT= sqrt(2*DiEleLV.Pt()*theMET->pt()*(1-cos(abs(DiEleLV.Phi()-theMET->phi()))));
                 MassT_l2 = sqrt(2*Ele2LV.Pt()*theMET->pt()*(1-cos(abs(Ele2LV.Phi()-theMET->phi()))));
-                  if((tag_electron1->charge()*tag_electron2->charge()==-1) && tag_electron1->pt()>=lep1ptThre_ && tag_electron2->pt()>=lep1ptThre_  && DiEleLV.Pt()>DiLepPtThre_ && DiEleLV.M()>DiLepMassThre_ && MassT>MassTThre_ && MassT_l2 >MassT_l2Thre_ && Save == 1. && Savejet==1){
+                  if((tag_electron1->charge()*tag_electron2->charge()==-1) && tag_electron1->pt()>=lep1ptThre_ && tag_electron2->pt()>=lep1ptThre_  && DiEleLV.Pt()>DiLepPtThre_ && (DiEleLV.M() > DiLepMassHigThre_ || DiEleLV.M() < DiLepMassLowThre_) && MassT>MassTThre_ && MassT_l2 >MassT_l2Thre_ && Save == 1. && Savejet==1){
                     HHWWggTag tag_obj;
 
                     if(doHHWWggTagCutFlowAnalysis_){
@@ -1326,7 +1328,7 @@ namespace flashgg {
                 reco::Candidate::LorentzVector DiMuLV = Mu1LV +  Mu2LV;
                 MassT= sqrt(2*DiMuLV.Pt()*theMET->pt()*(1-cos(abs(DiMuLV.Phi()-theMET->phi()))));
                 MassT_l2 = sqrt(2*Mu2LV.Pt()*theMET->pt()*(1-cos(abs(Mu2LV.Phi()-theMET->phi()))));
-                if((tag_muon1->charge()*tag_muon2->charge() == -1) && tag_muon1->pt()>=lep1ptThre_ && tag_muon2->pt()>=lep2ptThre_  && DiMuLV.Pt()>DiLepPtThre_ && DiMuLV.M()>DiLepMassThre_ && MassT>MassTThre_ && MassT_l2>MassT_l2Thre_ && Save == 1. && Savejet==1){
+                if((tag_muon1->charge()*tag_muon2->charge() == -1) && tag_muon1->pt()>=lep1ptThre_ && tag_muon2->pt()>=lep2ptThre_  && DiMuLV.Pt()>DiLepPtThre_ && (DiMuLV.M() > DiLepMassHigThre_ || DiMuLV.M() < DiLepMassLowThre_) && MassT>MassTThre_ && MassT_l2>MassT_l2Thre_ && Save == 1. && Savejet==1){
                   HHWWggTag tag_obj;
 
                   if(doHHWWggTagCutFlowAnalysis_){
@@ -1398,7 +1400,7 @@ namespace flashgg {
                 reco::Candidate::LorentzVector DiLepLV = EleLV +  MuLV;
                 MassT= sqrt(2*DiLepLV.Pt()*theMET->pt()*(1-cos(abs(DiLepLV.Phi()-theMET->phi()))));
                 MassT_l2= sqrt(2*MuLV.Pt()*theMET->pt()*(1-cos(abs(MuLV.Phi()-theMET->phi()))));
-                if((((tag_electron1->pt()>=lep1ptThre_) && (tag_muon1->pt()>=lep2ptThre_))||((tag_muon1->pt()>=lep1ptThre_) && (tag_electron1->pt()>=lep2ptThre_))) && (tag_muon1->charge()*tag_electron1->charge()==-1) && (DiLepLV.M()>DiLepMassThre_) && (DiLepLV.Pt()>DiLepPtThre_) && (MassT_l2>MassTThre_) && (MassT>MassT_l2Thre_) && (Save==1.) &&(Savejet==1)){
+                if((((tag_electron1->pt()>=lep1ptThre_) && (tag_muon1->pt()>=lep2ptThre_))||((tag_muon1->pt()>=lep1ptThre_) && (tag_electron1->pt()>=lep2ptThre_))) && (tag_muon1->charge()*tag_electron1->charge()==-1) && (DiLepLV.M() > DiLepMassHigThre_ || DiLepLV.M() < DiLepMassLowThre_) && (DiLepLV.Pt()>DiLepPtThre_) && (MassT_l2>MassTThre_) && (MassT>MassT_l2Thre_) && (Save==1.) &&(Savejet==1)){
                   HHWWggTag tag_obj;
                   if(doHHWWggTagCutFlowAnalysis_){
                     if(tag_electron1->pt()>tag_muon1->pt()) Cut_Variables[18]=2.;//e mu
