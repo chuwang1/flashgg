@@ -95,9 +95,11 @@ flashggHHWWggTag = cms.EDProducer("FlashggHHWWggTagProducer",
                                     lep2ptThre = cms.double(10.),
                                     lep3ptThre = cms.double(10.),
                                     DiLepPtThre = cms.double(0.),
-                                    DiLepMassThre = cms.double(0.),
+                                    DiLepMassHigThre = cms.double(100.),
+                                    DiLepMassLowThre = cms.double(80.),
                                     MassTThre = cms.double(0.),
                                     MassT_l2Thre = cms.double(0.),
+                                    Dipho_pT_Thre = cms.double(54.),
                                     SaveOthers = cms.bool(True)
                                     )
 # flashggHHWWggTagSequence = cms.Sequence( flashggHHWWggTag ) # not used

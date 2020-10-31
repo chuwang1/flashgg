@@ -183,11 +183,13 @@ namespace flashgg {
     double lep1ptThre_;
     double lep2ptThre_;
     double lep3ptThre_;
-    double DiLepMassThre_;
+    double DiLepMassHigThre_;
+    double DiLepMassLowThre_;
     double DiLepPtThre_;
     double MassTThre_;
     double MassT_l2Thre_;
     double dipho_MVA;
+    double Dipho_pT_Thre_;
     edm::InputTag genInfo_;
     edm::EDGetTokenT<GenEventInfoProduct> genInfoToken_;
   };
@@ -310,9 +312,11 @@ namespace flashgg {
       lep2ptThre_ = pSet.getParameter<double>("lep2ptThre");//means > lep2pt
       lep3ptThre_ = pSet.getParameter<double>("lep3ptThre");//means < lep3pt
       DiLepPtThre_ = pSet.getParameter<double>("DiLepPtThre");
-      DiLepMassThre_ = pSet.getParameter<double>("DiLepMassThre");
+      DiLepMassHigThre_ = pSet.getParameter<double>("DiLepMassHigThre");
+      DiLepMassLowThre_ = pSet.getParameter<double>("DiLepMassLowThre");
       MassTThre_ = pSet.getParameter<double>("MassTThre");
       MassT_l2Thre_ = pSet.getParameter<double>("MassT_l2Thre");
+      Dipho_pT_Thre_ = pSet.getParameter<double>("Dipho_pT_Thre");
       produces<vector<HHWWggTag>>();
       // for (auto & systname : systematicsLabels) { // to deal with systematics in producer
       //     produces<vector<HHWWggTag>>(systname);
@@ -866,11 +870,18 @@ namespace flashgg {
           const flashgg::Photon* subleadPho = dipho->subLeadingPhoton();
 
           if(doHHWWggNonResAnalysis_){
-            leadPho_pt = leadPho->pt();
-            subleadPho_pt = subleadPho->pt();
-            sumpT = leadPho_pt + subleadPho_pt;
-            if(!doHHWWggTagCutFlowAnalysis_ && sumpT < 100.) continue; // if not doing cut flow analysis to save events, remove event
+            // leadPho_pt = leadPho->pt();
+            // subleadPho_pt = subleadPho->pt();
+            // sumpT = leadPho_pt + subleadPho_pt;
+            sumpT = dipho->pt();
+            cout<<"Dipho Pt"<<sumpT<<endl;
+            if(sumpT < Dipho_pT_Thre_){
+            Cut_Variables[19]=0;}
+            else Cut_Variables[19]=1;
+            if(!doHHWWggTagCutFlowAnalysis_ && sumpT < Dipho_pT_Thre_) continue; // if not doing cut flow analysis to save events, remove event
           }
+            // if(!doHHWWggTagCutFlowAnalysis_ && sumpT < 100.) continue; // if not doing cut flow analysis to save events, remove event
+          // }
 
           //-- MVA selections
           diphoton_vertex = dipho->vtx();
@@ -1285,7 +1296,7 @@ namespace flashgg {
                 reco::Candidate::LorentzVector DiEleLV = Ele1LV +  Ele2LV;
                 MassT= sqrt(2*DiEleLV.Pt()*theMET->pt()*(1-cos(abs(DiEleLV.Phi()-theMET->phi()))));
                 MassT_l2 = sqrt(2*Ele2LV.Pt()*theMET->pt()*(1-cos(abs(Ele2LV.Phi()-theMET->phi()))));
-                  if((tag_electron1->charge()*tag_electron2->charge()==-1) && tag_electron1->pt()>=lep1ptThre_ && tag_electron2->pt()>=lep1ptThre_  && DiEleLV.Pt()>DiLepPtThre_ && DiEleLV.M()>DiLepMassThre_ && MassT>MassTThre_ && MassT_l2 >MassT_l2Thre_ && Save == 1. && Savejet==1){
+                  if((tag_electron1->charge()*tag_electron2->charge()==-1) && tag_electron1->pt()>=lep1ptThre_ && tag_electron2->pt()>=lep1ptThre_  && DiEleLV.Pt()>DiLepPtThre_ && ( DiEleLV.M() < DiLepMassLowThre_ || DiEleLV.M() > DiLepMassHigThre_)  && MassT>MassTThre_ && MassT_l2 >MassT_l2Thre_ && Save == 1. && Savejet==1){
                     HHWWggTag tag_obj;
 
                     if(doHHWWggTagCutFlowAnalysis_){
@@ -1358,7 +1369,7 @@ namespace flashgg {
                 reco::Candidate::LorentzVector DiMuLV = Mu1LV +  Mu2LV;
                 MassT= sqrt(2*DiMuLV.Pt()*theMET->pt()*(1-cos(abs(DiMuLV.Phi()-theMET->phi()))));
                 MassT_l2 = sqrt(2*Mu2LV.Pt()*theMET->pt()*(1-cos(abs(Mu2LV.Phi()-theMET->phi()))));
-                if((tag_muon1->charge()*tag_muon2->charge() == -1) && tag_muon1->pt()>=lep1ptThre_ && tag_muon2->pt()>=lep2ptThre_  && DiMuLV.Pt()>DiLepPtThre_ && DiMuLV.M()>DiLepMassThre_ && MassT>MassTThre_ && MassT_l2>MassT_l2Thre_ && Save == 1. && Savejet==1){
+                if((tag_muon1->charge()*tag_muon2->charge() == -1) && tag_muon1->pt()>=lep1ptThre_ && tag_muon2->pt()>=lep2ptThre_  && DiMuLV.Pt()>DiLepPtThre_ && ( DiMuLV.M() < DiLepMassLowThre_ || DiMuLV.M() > DiLepMassHigThre_) && MassT>MassTThre_ && MassT_l2>MassT_l2Thre_ && Save == 1. && Savejet==1){
                   HHWWggTag tag_obj;
 
                   if(doHHWWggTagCutFlowAnalysis_){
@@ -1432,7 +1443,7 @@ namespace flashgg {
                 reco::Candidate::LorentzVector DiLepLV = EleLV +  MuLV;
                 MassT= sqrt(2*DiLepLV.Pt()*theMET->pt()*(1-cos(abs(DiLepLV.Phi()-theMET->phi()))));
                 MassT_l2= sqrt(2*MuLV.Pt()*theMET->pt()*(1-cos(abs(MuLV.Phi()-theMET->phi()))));
-                if((((tag_electron1->pt()>=lep1ptThre_) && (tag_muon1->pt()>=lep2ptThre_))||((tag_muon1->pt()>=lep1ptThre_) && (tag_electron1->pt()>=lep2ptThre_))) && (tag_muon1->charge()*tag_electron1->charge()==-1) && (DiLepLV.M()>DiLepMassThre_) && (DiLepLV.Pt()>DiLepPtThre_) && (MassT_l2>MassTThre_) && (MassT>MassT_l2Thre_) && (Save==1.) &&(Savejet==1)){
+                if((((tag_electron1->pt()>=lep1ptThre_) && (tag_muon1->pt()>=lep2ptThre_))||((tag_muon1->pt()>=lep1ptThre_) && (tag_electron1->pt()>=lep2ptThre_))) && (tag_muon1->charge()*tag_electron1->charge()==-1) && ( DiLepLV.M() < DiLepMassLowThre_ || DiLepLV.M() > DiLepMassHigThre_)  && (DiLepLV.Pt()>DiLepPtThre_) && (MassT_l2>MassTThre_) && (MassT>MassT_l2Thre_) && (Save==1.) &&(Savejet==1)){
                   HHWWggTag tag_obj;
                   if(doHHWWggTagCutFlowAnalysis_){
                     if(tag_electron1->pt()>tag_muon1->pt()) Cut_Variables[18]=2.;//e mu
