@@ -27,6 +27,6 @@ AutoDict_*
 *.pdf
 
 # This is a symlink created by setup.sh
-./SM_2017
+SM_2017/
 *.sub
-./Test_2017
+Test_2017/
