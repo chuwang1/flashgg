@@ -1,0 +1,1742 @@
+Could not find platform independent libraries <prefix>
+Could not find platform dependent libraries <exec_prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+ImportError: No module named site
+/cvmfs/cms.cern.ch/slc7_amd64_gcc700/external/py2-requests/2.21.0-pafccj2/lib/python2.7/site-packages/requests/__init__.py:91: RequestsDependencyWarning: urllib3 (1.25.2) or chardet (3.0.4) doesn't match a supported version!
+  RequestsDependencyWarning)
+17-Nov-2020 14:58:08 CET  Initiating request to open file root://cms-xrd-global.cern.ch//store/group/phys_higgs/cmshgg/chuw/flashgg/private_MicroAod/NonRes2017/chuw/GluGluToHHTo2G2l2nu_node_SM_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NonRes2017-chuw-v0-RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/201028_155455/0000/myMicroAODOutputFile_14.root
+%MSG-w XrdAdaptor:  file_open 17-Nov-2020 14:58:10 CET pre-events
+Data is served from cern.ch instead of original site CERN-CMSGLOBAL-01
+%MSG
+17-Nov-2020 14:58:22 CET  Successfully opened file root://cms-xrd-global.cern.ch//store/group/phys_higgs/cmshgg/chuw/flashgg/private_MicroAod/NonRes2017/chuw/GluGluToHHTo2G2l2nu_node_SM_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NonRes2017-chuw-v0-RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/201028_155455/0000/myMicroAODOutputFile_14.root
+Begin processing the 1st record. Run 1, Event 286001, LumiSection 287 on stream 0 at 17-Nov-2020 15:07:43.003 CET
+17-Nov-2020 16:34:15 CET  Closed file root://cms-xrd-global.cern.ch//store/group/phys_higgs/cmshgg/chuw/flashgg/private_MicroAod/NonRes2017/chuw/GluGluToHHTo2G2l2nu_node_SM_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NonRes2017-chuw-v0-RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/201028_155455/0000/myMicroAODOutputFile_14.root
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 1000 passed = 929 failed = 71
+
+TrigReport ---------- Path   Summary ------------
+TrigReport  Trig Bit#   Executed     Passed     Failed      Error Name
+TrigReport     1    0       1000        929         71          0 p
+
+TrigReport -------End-Path   Summary ------------
+TrigReport  Trig Bit#   Executed     Passed     Failed      Error Name
+
+TrigReport ---------- Modules in Path: p ------------
+TrigReport  Trig Bit#    Visited     Passed     Failed      Error Name
+TrigReport     1    0       1000        992          8          0 flashggMetFilters
+TrigReport     1    1        992        992          0          0 flashggDiPhotons
+TrigReport     1    2        992        992          0          0 flashggDifferentialPhoIdInputsCorrection
+TrigReport     1    3        992        992          0          0 flashggDiPhotonSystematics
+TrigReport     1    4        992        992          0          0 flashggMetSystematics
+TrigReport     1    5        992        992          0          0 flashggMuonSystematics
+TrigReport     1    6        992        992          0          0 flashggElectronSystematics
+TrigReport     1    7        992        992          0          0 flashggUnpackedJets
+TrigReport     1    8        992        992          0          0 flashggJetSystematics0
+TrigReport     1    9        992        992          0          0 flashggJetSystematics1
+TrigReport     1   10        992        992          0          0 flashggJetSystematics2
+TrigReport     1   11        992        992          0          0 flashggJetSystematics3
+TrigReport     1   12        992        992          0          0 flashggJetSystematics4
+TrigReport     1   13        992        992          0          0 flashggJetSystematics5
+TrigReport     1   14        992        992          0          0 flashggJetSystematics6
+TrigReport     1   15        992        992          0          0 flashggJetSystematics7
+TrigReport     1   16        992        992          0          0 flashggJetSystematics8
+TrigReport     1   17        992        992          0          0 flashggJetSystematics9
+TrigReport     1   18        992        992          0          0 flashggJetSystematics10
+TrigReport     1   19        992        992          0          0 flashggJetSystematics11
+TrigReport     1   20        992        992          0          0 flashggPrefireDiPhotons
+TrigReport     1   21        992        992          0          0 flashggPreselectedDiPhotons
+TrigReport     1   22        992        992          0          0 flashggDiPhotonMVA
+TrigReport     1   23        992        992          0          0 flashggVHhadMVA
+TrigReport     1   24        992        992          0          0 flashggHHWWggTag
+TrigReport     1   25        992        992          0          0 flashggTagSorter
+TrigReport     1   26        992        992          0          0 flashggPrefireDiPhotonsMvaShiftUp01sigma
+TrigReport     1   27        992        992          0          0 flashggPreselectedDiPhotonsMvaShiftUp01sigma
+TrigReport     1   28        992        992          0          0 flashggDiPhotonMVAMvaShiftUp01sigma
+TrigReport     1   29        992        992          0          0 flashggVHhadMVAMvaShiftUp01sigma
+TrigReport     1   30        992        992          0          0 flashggHHWWggTagMvaShiftUp01sigma
+TrigReport     1   31        992        992          0          0 flashggTagSorterMvaShiftUp01sigma
+TrigReport     1   32        992        992          0          0 flashggPrefireDiPhotonsSigmaEOverEShiftUp01sigma
+TrigReport     1   33        992        992          0          0 flashggPreselectedDiPhotonsSigmaEOverEShiftUp01sigma
+TrigReport     1   34        992        992          0          0 flashggDiPhotonMVASigmaEOverEShiftUp01sigma
+TrigReport     1   35        992        992          0          0 flashggVHhadMVASigmaEOverEShiftUp01sigma
+TrigReport     1   36        992        992          0          0 flashggHHWWggTagSigmaEOverEShiftUp01sigma
+TrigReport     1   37        992        992          0          0 flashggTagSorterSigmaEOverEShiftUp01sigma
+TrigReport     1   38        992        992          0          0 flashggPrefireDiPhotonsMaterialCentralBarrelUp01sigma
+TrigReport     1   39        992        992          0          0 flashggPreselectedDiPhotonsMaterialCentralBarrelUp01sigma
+TrigReport     1   40        992        992          0          0 flashggDiPhotonMVAMaterialCentralBarrelUp01sigma
+TrigReport     1   41        992        992          0          0 flashggVHhadMVAMaterialCentralBarrelUp01sigma
+TrigReport     1   42        992        992          0          0 flashggHHWWggTagMaterialCentralBarrelUp01sigma
+TrigReport     1   43        992        992          0          0 flashggTagSorterMaterialCentralBarrelUp01sigma
+TrigReport     1   44        992        992          0          0 flashggPrefireDiPhotonsMaterialOuterBarrelUp01sigma
+TrigReport     1   45        992        992          0          0 flashggPreselectedDiPhotonsMaterialOuterBarrelUp01sigma
+TrigReport     1   46        992        992          0          0 flashggDiPhotonMVAMaterialOuterBarrelUp01sigma
+TrigReport     1   47        992        992          0          0 flashggVHhadMVAMaterialOuterBarrelUp01sigma
+TrigReport     1   48        992        992          0          0 flashggHHWWggTagMaterialOuterBarrelUp01sigma
+TrigReport     1   49        992        992          0          0 flashggTagSorterMaterialOuterBarrelUp01sigma
+TrigReport     1   50        992        992          0          0 flashggPrefireDiPhotonsMaterialForwardUp01sigma
+TrigReport     1   51        992        992          0          0 flashggPreselectedDiPhotonsMaterialForwardUp01sigma
+TrigReport     1   52        992        992          0          0 flashggDiPhotonMVAMaterialForwardUp01sigma
+TrigReport     1   53        992        992          0          0 flashggVHhadMVAMaterialForwardUp01sigma
+TrigReport     1   54        992        992          0          0 flashggHHWWggTagMaterialForwardUp01sigma
+TrigReport     1   55        992        992          0          0 flashggTagSorterMaterialForwardUp01sigma
+TrigReport     1   56        992        992          0          0 flashggPrefireDiPhotonsFNUFEBUp01sigma
+TrigReport     1   57        992        992          0          0 flashggPreselectedDiPhotonsFNUFEBUp01sigma
+TrigReport     1   58        992        992          0          0 flashggDiPhotonMVAFNUFEBUp01sigma
+TrigReport     1   59        992        992          0          0 flashggVHhadMVAFNUFEBUp01sigma
+TrigReport     1   60        992        992          0          0 flashggHHWWggTagFNUFEBUp01sigma
+TrigReport     1   61        992        992          0          0 flashggTagSorterFNUFEBUp01sigma
+TrigReport     1   62        992        992          0          0 flashggPrefireDiPhotonsFNUFEEUp01sigma
+TrigReport     1   63        992        992          0          0 flashggPreselectedDiPhotonsFNUFEEUp01sigma
+TrigReport     1   64        992        992          0          0 flashggDiPhotonMVAFNUFEEUp01sigma
+TrigReport     1   65        992        992          0          0 flashggVHhadMVAFNUFEEUp01sigma
+TrigReport     1   66        992        992          0          0 flashggHHWWggTagFNUFEEUp01sigma
+TrigReport     1   67        992        992          0          0 flashggTagSorterFNUFEEUp01sigma
+TrigReport     1   68        992        992          0          0 flashggPrefireDiPhotonsMCScaleGain6EBUp01sigma
+TrigReport     1   69        992        992          0          0 flashggPreselectedDiPhotonsMCScaleGain6EBUp01sigma
+TrigReport     1   70        992        992          0          0 flashggDiPhotonMVAMCScaleGain6EBUp01sigma
+TrigReport     1   71        992        992          0          0 flashggVHhadMVAMCScaleGain6EBUp01sigma
+TrigReport     1   72        992        992          0          0 flashggHHWWggTagMCScaleGain6EBUp01sigma
+TrigReport     1   73        992        992          0          0 flashggTagSorterMCScaleGain6EBUp01sigma
+TrigReport     1   74        992        992          0          0 flashggPrefireDiPhotonsMCScaleGain1EBUp01sigma
+TrigReport     1   75        992        992          0          0 flashggPreselectedDiPhotonsMCScaleGain1EBUp01sigma
+TrigReport     1   76        992        992          0          0 flashggDiPhotonMVAMCScaleGain1EBUp01sigma
+TrigReport     1   77        992        992          0          0 flashggVHhadMVAMCScaleGain1EBUp01sigma
+TrigReport     1   78        992        992          0          0 flashggHHWWggTagMCScaleGain1EBUp01sigma
+TrigReport     1   79        992        992          0          0 flashggTagSorterMCScaleGain1EBUp01sigma
+TrigReport     1   80        992        992          0          0 flashggPrefireDiPhotonsShowerShapeHighR9EBUp01sigma
+TrigReport     1   81        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeHighR9EBUp01sigma
+TrigReport     1   82        992        992          0          0 flashggDiPhotonMVAShowerShapeHighR9EBUp01sigma
+TrigReport     1   83        992        992          0          0 flashggVHhadMVAShowerShapeHighR9EBUp01sigma
+TrigReport     1   84        992        992          0          0 flashggHHWWggTagShowerShapeHighR9EBUp01sigma
+TrigReport     1   85        992        992          0          0 flashggTagSorterShowerShapeHighR9EBUp01sigma
+TrigReport     1   86        992        992          0          0 flashggPrefireDiPhotonsMCScaleHighR9EBUp01sigma
+TrigReport     1   87        992        992          0          0 flashggPreselectedDiPhotonsMCScaleHighR9EBUp01sigma
+TrigReport     1   88        992        992          0          0 flashggDiPhotonMVAMCScaleHighR9EBUp01sigma
+TrigReport     1   89        992        992          0          0 flashggVHhadMVAMCScaleHighR9EBUp01sigma
+TrigReport     1   90        992        992          0          0 flashggHHWWggTagMCScaleHighR9EBUp01sigma
+TrigReport     1   91        992        992          0          0 flashggTagSorterMCScaleHighR9EBUp01sigma
+TrigReport     1   92        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EBRhoUp01sigma
+TrigReport     1   93        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EBRhoUp01sigma
+TrigReport     1   94        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EBRhoUp01sigma
+TrigReport     1   95        992        992          0          0 flashggVHhadMVAMCSmearHighR9EBRhoUp01sigma
+TrigReport     1   96        992        992          0          0 flashggHHWWggTagMCSmearHighR9EBRhoUp01sigma
+TrigReport     1   97        992        992          0          0 flashggTagSorterMCSmearHighR9EBRhoUp01sigma
+TrigReport     1   98        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EBPhiUp01sigma
+TrigReport     1   99        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EBPhiUp01sigma
+TrigReport     1  100        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EBPhiUp01sigma
+TrigReport     1  101        992        992          0          0 flashggVHhadMVAMCSmearHighR9EBPhiUp01sigma
+TrigReport     1  102        992        992          0          0 flashggHHWWggTagMCSmearHighR9EBPhiUp01sigma
+TrigReport     1  103        992        992          0          0 flashggTagSorterMCSmearHighR9EBPhiUp01sigma
+TrigReport     1  104        992        992          0          0 flashggPrefireDiPhotonsShowerShapeHighR9EEUp01sigma
+TrigReport     1  105        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeHighR9EEUp01sigma
+TrigReport     1  106        992        992          0          0 flashggDiPhotonMVAShowerShapeHighR9EEUp01sigma
+TrigReport     1  107        992        992          0          0 flashggVHhadMVAShowerShapeHighR9EEUp01sigma
+TrigReport     1  108        992        992          0          0 flashggHHWWggTagShowerShapeHighR9EEUp01sigma
+TrigReport     1  109        992        992          0          0 flashggTagSorterShowerShapeHighR9EEUp01sigma
+TrigReport     1  110        992        992          0          0 flashggPrefireDiPhotonsMCScaleHighR9EEUp01sigma
+TrigReport     1  111        992        992          0          0 flashggPreselectedDiPhotonsMCScaleHighR9EEUp01sigma
+TrigReport     1  112        992        992          0          0 flashggDiPhotonMVAMCScaleHighR9EEUp01sigma
+TrigReport     1  113        992        992          0          0 flashggVHhadMVAMCScaleHighR9EEUp01sigma
+TrigReport     1  114        992        992          0          0 flashggHHWWggTagMCScaleHighR9EEUp01sigma
+TrigReport     1  115        992        992          0          0 flashggTagSorterMCScaleHighR9EEUp01sigma
+TrigReport     1  116        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EERhoUp01sigma
+TrigReport     1  117        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EERhoUp01sigma
+TrigReport     1  118        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EERhoUp01sigma
+TrigReport     1  119        992        992          0          0 flashggVHhadMVAMCSmearHighR9EERhoUp01sigma
+TrigReport     1  120        992        992          0          0 flashggHHWWggTagMCSmearHighR9EERhoUp01sigma
+TrigReport     1  121        992        992          0          0 flashggTagSorterMCSmearHighR9EERhoUp01sigma
+TrigReport     1  122        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EEPhiUp01sigma
+TrigReport     1  123        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EEPhiUp01sigma
+TrigReport     1  124        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EEPhiUp01sigma
+TrigReport     1  125        992        992          0          0 flashggVHhadMVAMCSmearHighR9EEPhiUp01sigma
+TrigReport     1  126        992        992          0          0 flashggHHWWggTagMCSmearHighR9EEPhiUp01sigma
+TrigReport     1  127        992        992          0          0 flashggTagSorterMCSmearHighR9EEPhiUp01sigma
+TrigReport     1  128        992        992          0          0 flashggPrefireDiPhotonsShowerShapeLowR9EBUp01sigma
+TrigReport     1  129        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeLowR9EBUp01sigma
+TrigReport     1  130        992        992          0          0 flashggDiPhotonMVAShowerShapeLowR9EBUp01sigma
+TrigReport     1  131        992        992          0          0 flashggVHhadMVAShowerShapeLowR9EBUp01sigma
+TrigReport     1  132        992        992          0          0 flashggHHWWggTagShowerShapeLowR9EBUp01sigma
+TrigReport     1  133        992        992          0          0 flashggTagSorterShowerShapeLowR9EBUp01sigma
+TrigReport     1  134        992        992          0          0 flashggPrefireDiPhotonsMCScaleLowR9EBUp01sigma
+TrigReport     1  135        992        992          0          0 flashggPreselectedDiPhotonsMCScaleLowR9EBUp01sigma
+TrigReport     1  136        992        992          0          0 flashggDiPhotonMVAMCScaleLowR9EBUp01sigma
+TrigReport     1  137        992        992          0          0 flashggVHhadMVAMCScaleLowR9EBUp01sigma
+TrigReport     1  138        992        992          0          0 flashggHHWWggTagMCScaleLowR9EBUp01sigma
+TrigReport     1  139        992        992          0          0 flashggTagSorterMCScaleLowR9EBUp01sigma
+TrigReport     1  140        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EBRhoUp01sigma
+TrigReport     1  141        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EBRhoUp01sigma
+TrigReport     1  142        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EBRhoUp01sigma
+TrigReport     1  143        992        992          0          0 flashggVHhadMVAMCSmearLowR9EBRhoUp01sigma
+TrigReport     1  144        992        992          0          0 flashggHHWWggTagMCSmearLowR9EBRhoUp01sigma
+TrigReport     1  145        992        992          0          0 flashggTagSorterMCSmearLowR9EBRhoUp01sigma
+TrigReport     1  146        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EBPhiUp01sigma
+TrigReport     1  147        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EBPhiUp01sigma
+TrigReport     1  148        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EBPhiUp01sigma
+TrigReport     1  149        992        992          0          0 flashggVHhadMVAMCSmearLowR9EBPhiUp01sigma
+TrigReport     1  150        992        992          0          0 flashggHHWWggTagMCSmearLowR9EBPhiUp01sigma
+TrigReport     1  151        992        992          0          0 flashggTagSorterMCSmearLowR9EBPhiUp01sigma
+TrigReport     1  152        992        992          0          0 flashggPrefireDiPhotonsShowerShapeLowR9EEUp01sigma
+TrigReport     1  153        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeLowR9EEUp01sigma
+TrigReport     1  154        992        992          0          0 flashggDiPhotonMVAShowerShapeLowR9EEUp01sigma
+TrigReport     1  155        992        992          0          0 flashggVHhadMVAShowerShapeLowR9EEUp01sigma
+TrigReport     1  156        992        992          0          0 flashggHHWWggTagShowerShapeLowR9EEUp01sigma
+TrigReport     1  157        992        992          0          0 flashggTagSorterShowerShapeLowR9EEUp01sigma
+TrigReport     1  158        992        992          0          0 flashggPrefireDiPhotonsMCScaleLowR9EEUp01sigma
+TrigReport     1  159        992        992          0          0 flashggPreselectedDiPhotonsMCScaleLowR9EEUp01sigma
+TrigReport     1  160        992        992          0          0 flashggDiPhotonMVAMCScaleLowR9EEUp01sigma
+TrigReport     1  161        992        992          0          0 flashggVHhadMVAMCScaleLowR9EEUp01sigma
+TrigReport     1  162        992        992          0          0 flashggHHWWggTagMCScaleLowR9EEUp01sigma
+TrigReport     1  163        992        992          0          0 flashggTagSorterMCScaleLowR9EEUp01sigma
+TrigReport     1  164        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EERhoUp01sigma
+TrigReport     1  165        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EERhoUp01sigma
+TrigReport     1  166        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EERhoUp01sigma
+TrigReport     1  167        992        992          0          0 flashggVHhadMVAMCSmearLowR9EERhoUp01sigma
+TrigReport     1  168        992        992          0          0 flashggHHWWggTagMCSmearLowR9EERhoUp01sigma
+TrigReport     1  169        992        992          0          0 flashggTagSorterMCSmearLowR9EERhoUp01sigma
+TrigReport     1  170        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EEPhiUp01sigma
+TrigReport     1  171        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EEPhiUp01sigma
+TrigReport     1  172        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EEPhiUp01sigma
+TrigReport     1  173        992        992          0          0 flashggVHhadMVAMCSmearLowR9EEPhiUp01sigma
+TrigReport     1  174        992        992          0          0 flashggHHWWggTagMCSmearLowR9EEPhiUp01sigma
+TrigReport     1  175        992        992          0          0 flashggTagSorterMCSmearLowR9EEPhiUp01sigma
+TrigReport     1  176        992        992          0          0 flashggPrefireDiPhotonsMvaShiftDown01sigma
+TrigReport     1  177        992        992          0          0 flashggPreselectedDiPhotonsMvaShiftDown01sigma
+TrigReport     1  178        992        992          0          0 flashggDiPhotonMVAMvaShiftDown01sigma
+TrigReport     1  179        992        992          0          0 flashggVHhadMVAMvaShiftDown01sigma
+TrigReport     1  180        992        992          0          0 flashggHHWWggTagMvaShiftDown01sigma
+TrigReport     1  181        992        992          0          0 flashggTagSorterMvaShiftDown01sigma
+TrigReport     1  182        992        992          0          0 flashggPrefireDiPhotonsSigmaEOverEShiftDown01sigma
+TrigReport     1  183        992        992          0          0 flashggPreselectedDiPhotonsSigmaEOverEShiftDown01sigma
+TrigReport     1  184        992        992          0          0 flashggDiPhotonMVASigmaEOverEShiftDown01sigma
+TrigReport     1  185        992        992          0          0 flashggVHhadMVASigmaEOverEShiftDown01sigma
+TrigReport     1  186        992        992          0          0 flashggHHWWggTagSigmaEOverEShiftDown01sigma
+TrigReport     1  187        992        992          0          0 flashggTagSorterSigmaEOverEShiftDown01sigma
+TrigReport     1  188        992        992          0          0 flashggPrefireDiPhotonsMaterialCentralBarrelDown01sigma
+TrigReport     1  189        992        992          0          0 flashggPreselectedDiPhotonsMaterialCentralBarrelDown01sigma
+TrigReport     1  190        992        992          0          0 flashggDiPhotonMVAMaterialCentralBarrelDown01sigma
+TrigReport     1  191        992        992          0          0 flashggVHhadMVAMaterialCentralBarrelDown01sigma
+TrigReport     1  192        992        992          0          0 flashggHHWWggTagMaterialCentralBarrelDown01sigma
+TrigReport     1  193        992        992          0          0 flashggTagSorterMaterialCentralBarrelDown01sigma
+TrigReport     1  194        992        992          0          0 flashggPrefireDiPhotonsMaterialOuterBarrelDown01sigma
+TrigReport     1  195        992        992          0          0 flashggPreselectedDiPhotonsMaterialOuterBarrelDown01sigma
+TrigReport     1  196        992        992          0          0 flashggDiPhotonMVAMaterialOuterBarrelDown01sigma
+TrigReport     1  197        992        992          0          0 flashggVHhadMVAMaterialOuterBarrelDown01sigma
+TrigReport     1  198        992        992          0          0 flashggHHWWggTagMaterialOuterBarrelDown01sigma
+TrigReport     1  199        992        992          0          0 flashggTagSorterMaterialOuterBarrelDown01sigma
+TrigReport     1  200        992        992          0          0 flashggPrefireDiPhotonsMaterialForwardDown01sigma
+TrigReport     1  201        992        992          0          0 flashggPreselectedDiPhotonsMaterialForwardDown01sigma
+TrigReport     1  202        992        992          0          0 flashggDiPhotonMVAMaterialForwardDown01sigma
+TrigReport     1  203        992        992          0          0 flashggVHhadMVAMaterialForwardDown01sigma
+TrigReport     1  204        992        992          0          0 flashggHHWWggTagMaterialForwardDown01sigma
+TrigReport     1  205        992        992          0          0 flashggTagSorterMaterialForwardDown01sigma
+TrigReport     1  206        992        992          0          0 flashggPrefireDiPhotonsFNUFEBDown01sigma
+TrigReport     1  207        992        992          0          0 flashggPreselectedDiPhotonsFNUFEBDown01sigma
+TrigReport     1  208        992        992          0          0 flashggDiPhotonMVAFNUFEBDown01sigma
+TrigReport     1  209        992        992          0          0 flashggVHhadMVAFNUFEBDown01sigma
+TrigReport     1  210        992        992          0          0 flashggHHWWggTagFNUFEBDown01sigma
+TrigReport     1  211        992        992          0          0 flashggTagSorterFNUFEBDown01sigma
+TrigReport     1  212        992        992          0          0 flashggPrefireDiPhotonsFNUFEEDown01sigma
+TrigReport     1  213        992        992          0          0 flashggPreselectedDiPhotonsFNUFEEDown01sigma
+TrigReport     1  214        992        992          0          0 flashggDiPhotonMVAFNUFEEDown01sigma
+TrigReport     1  215        992        992          0          0 flashggVHhadMVAFNUFEEDown01sigma
+TrigReport     1  216        992        992          0          0 flashggHHWWggTagFNUFEEDown01sigma
+TrigReport     1  217        992        992          0          0 flashggTagSorterFNUFEEDown01sigma
+TrigReport     1  218        992        992          0          0 flashggPrefireDiPhotonsMCScaleGain6EBDown01sigma
+TrigReport     1  219        992        992          0          0 flashggPreselectedDiPhotonsMCScaleGain6EBDown01sigma
+TrigReport     1  220        992        992          0          0 flashggDiPhotonMVAMCScaleGain6EBDown01sigma
+TrigReport     1  221        992        992          0          0 flashggVHhadMVAMCScaleGain6EBDown01sigma
+TrigReport     1  222        992        992          0          0 flashggHHWWggTagMCScaleGain6EBDown01sigma
+TrigReport     1  223        992        992          0          0 flashggTagSorterMCScaleGain6EBDown01sigma
+TrigReport     1  224        992        992          0          0 flashggPrefireDiPhotonsMCScaleGain1EBDown01sigma
+TrigReport     1  225        992        992          0          0 flashggPreselectedDiPhotonsMCScaleGain1EBDown01sigma
+TrigReport     1  226        992        992          0          0 flashggDiPhotonMVAMCScaleGain1EBDown01sigma
+TrigReport     1  227        992        992          0          0 flashggVHhadMVAMCScaleGain1EBDown01sigma
+TrigReport     1  228        992        992          0          0 flashggHHWWggTagMCScaleGain1EBDown01sigma
+TrigReport     1  229        992        992          0          0 flashggTagSorterMCScaleGain1EBDown01sigma
+TrigReport     1  230        992        992          0          0 flashggPrefireDiPhotonsShowerShapeHighR9EBDown01sigma
+TrigReport     1  231        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeHighR9EBDown01sigma
+TrigReport     1  232        992        992          0          0 flashggDiPhotonMVAShowerShapeHighR9EBDown01sigma
+TrigReport     1  233        992        992          0          0 flashggVHhadMVAShowerShapeHighR9EBDown01sigma
+TrigReport     1  234        992        992          0          0 flashggHHWWggTagShowerShapeHighR9EBDown01sigma
+TrigReport     1  235        992        992          0          0 flashggTagSorterShowerShapeHighR9EBDown01sigma
+TrigReport     1  236        992        992          0          0 flashggPrefireDiPhotonsMCScaleHighR9EBDown01sigma
+TrigReport     1  237        992        992          0          0 flashggPreselectedDiPhotonsMCScaleHighR9EBDown01sigma
+TrigReport     1  238        992        992          0          0 flashggDiPhotonMVAMCScaleHighR9EBDown01sigma
+TrigReport     1  239        992        992          0          0 flashggVHhadMVAMCScaleHighR9EBDown01sigma
+TrigReport     1  240        992        992          0          0 flashggHHWWggTagMCScaleHighR9EBDown01sigma
+TrigReport     1  241        992        992          0          0 flashggTagSorterMCScaleHighR9EBDown01sigma
+TrigReport     1  242        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EBRhoDown01sigma
+TrigReport     1  243        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EBRhoDown01sigma
+TrigReport     1  244        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EBRhoDown01sigma
+TrigReport     1  245        992        992          0          0 flashggVHhadMVAMCSmearHighR9EBRhoDown01sigma
+TrigReport     1  246        992        992          0          0 flashggHHWWggTagMCSmearHighR9EBRhoDown01sigma
+TrigReport     1  247        992        992          0          0 flashggTagSorterMCSmearHighR9EBRhoDown01sigma
+TrigReport     1  248        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EBPhiDown01sigma
+TrigReport     1  249        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EBPhiDown01sigma
+TrigReport     1  250        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EBPhiDown01sigma
+TrigReport     1  251        992        992          0          0 flashggVHhadMVAMCSmearHighR9EBPhiDown01sigma
+TrigReport     1  252        992        992          0          0 flashggHHWWggTagMCSmearHighR9EBPhiDown01sigma
+TrigReport     1  253        992        992          0          0 flashggTagSorterMCSmearHighR9EBPhiDown01sigma
+TrigReport     1  254        992        992          0          0 flashggPrefireDiPhotonsShowerShapeHighR9EEDown01sigma
+TrigReport     1  255        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeHighR9EEDown01sigma
+TrigReport     1  256        992        992          0          0 flashggDiPhotonMVAShowerShapeHighR9EEDown01sigma
+TrigReport     1  257        992        992          0          0 flashggVHhadMVAShowerShapeHighR9EEDown01sigma
+TrigReport     1  258        992        992          0          0 flashggHHWWggTagShowerShapeHighR9EEDown01sigma
+TrigReport     1  259        992        992          0          0 flashggTagSorterShowerShapeHighR9EEDown01sigma
+TrigReport     1  260        992        992          0          0 flashggPrefireDiPhotonsMCScaleHighR9EEDown01sigma
+TrigReport     1  261        992        992          0          0 flashggPreselectedDiPhotonsMCScaleHighR9EEDown01sigma
+TrigReport     1  262        992        992          0          0 flashggDiPhotonMVAMCScaleHighR9EEDown01sigma
+TrigReport     1  263        992        992          0          0 flashggVHhadMVAMCScaleHighR9EEDown01sigma
+TrigReport     1  264        992        992          0          0 flashggHHWWggTagMCScaleHighR9EEDown01sigma
+TrigReport     1  265        992        992          0          0 flashggTagSorterMCScaleHighR9EEDown01sigma
+TrigReport     1  266        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EERhoDown01sigma
+TrigReport     1  267        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EERhoDown01sigma
+TrigReport     1  268        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EERhoDown01sigma
+TrigReport     1  269        992        992          0          0 flashggVHhadMVAMCSmearHighR9EERhoDown01sigma
+TrigReport     1  270        992        992          0          0 flashggHHWWggTagMCSmearHighR9EERhoDown01sigma
+TrigReport     1  271        992        992          0          0 flashggTagSorterMCSmearHighR9EERhoDown01sigma
+TrigReport     1  272        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EEPhiDown01sigma
+TrigReport     1  273        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EEPhiDown01sigma
+TrigReport     1  274        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EEPhiDown01sigma
+TrigReport     1  275        992        992          0          0 flashggVHhadMVAMCSmearHighR9EEPhiDown01sigma
+TrigReport     1  276        992        992          0          0 flashggHHWWggTagMCSmearHighR9EEPhiDown01sigma
+TrigReport     1  277        992        992          0          0 flashggTagSorterMCSmearHighR9EEPhiDown01sigma
+TrigReport     1  278        992        992          0          0 flashggPrefireDiPhotonsShowerShapeLowR9EBDown01sigma
+TrigReport     1  279        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeLowR9EBDown01sigma
+TrigReport     1  280        992        992          0          0 flashggDiPhotonMVAShowerShapeLowR9EBDown01sigma
+TrigReport     1  281        992        992          0          0 flashggVHhadMVAShowerShapeLowR9EBDown01sigma
+TrigReport     1  282        992        992          0          0 flashggHHWWggTagShowerShapeLowR9EBDown01sigma
+TrigReport     1  283        992        992          0          0 flashggTagSorterShowerShapeLowR9EBDown01sigma
+TrigReport     1  284        992        992          0          0 flashggPrefireDiPhotonsMCScaleLowR9EBDown01sigma
+TrigReport     1  285        992        992          0          0 flashggPreselectedDiPhotonsMCScaleLowR9EBDown01sigma
+TrigReport     1  286        992        992          0          0 flashggDiPhotonMVAMCScaleLowR9EBDown01sigma
+TrigReport     1  287        992        992          0          0 flashggVHhadMVAMCScaleLowR9EBDown01sigma
+TrigReport     1  288        992        992          0          0 flashggHHWWggTagMCScaleLowR9EBDown01sigma
+TrigReport     1  289        992        992          0          0 flashggTagSorterMCScaleLowR9EBDown01sigma
+TrigReport     1  290        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EBRhoDown01sigma
+TrigReport     1  291        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EBRhoDown01sigma
+TrigReport     1  292        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EBRhoDown01sigma
+TrigReport     1  293        992        992          0          0 flashggVHhadMVAMCSmearLowR9EBRhoDown01sigma
+TrigReport     1  294        992        992          0          0 flashggHHWWggTagMCSmearLowR9EBRhoDown01sigma
+TrigReport     1  295        992        992          0          0 flashggTagSorterMCSmearLowR9EBRhoDown01sigma
+TrigReport     1  296        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EBPhiDown01sigma
+TrigReport     1  297        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EBPhiDown01sigma
+TrigReport     1  298        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EBPhiDown01sigma
+TrigReport     1  299        992        992          0          0 flashggVHhadMVAMCSmearLowR9EBPhiDown01sigma
+TrigReport     1  300        992        992          0          0 flashggHHWWggTagMCSmearLowR9EBPhiDown01sigma
+TrigReport     1  301        992        992          0          0 flashggTagSorterMCSmearLowR9EBPhiDown01sigma
+TrigReport     1  302        992        992          0          0 flashggPrefireDiPhotonsShowerShapeLowR9EEDown01sigma
+TrigReport     1  303        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeLowR9EEDown01sigma
+TrigReport     1  304        992        992          0          0 flashggDiPhotonMVAShowerShapeLowR9EEDown01sigma
+TrigReport     1  305        992        992          0          0 flashggVHhadMVAShowerShapeLowR9EEDown01sigma
+TrigReport     1  306        992        992          0          0 flashggHHWWggTagShowerShapeLowR9EEDown01sigma
+TrigReport     1  307        992        992          0          0 flashggTagSorterShowerShapeLowR9EEDown01sigma
+TrigReport     1  308        992        992          0          0 flashggPrefireDiPhotonsMCScaleLowR9EEDown01sigma
+TrigReport     1  309        992        992          0          0 flashggPreselectedDiPhotonsMCScaleLowR9EEDown01sigma
+TrigReport     1  310        992        992          0          0 flashggDiPhotonMVAMCScaleLowR9EEDown01sigma
+TrigReport     1  311        992        992          0          0 flashggVHhadMVAMCScaleLowR9EEDown01sigma
+TrigReport     1  312        992        992          0          0 flashggHHWWggTagMCScaleLowR9EEDown01sigma
+TrigReport     1  313        992        992          0          0 flashggTagSorterMCScaleLowR9EEDown01sigma
+TrigReport     1  314        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EERhoDown01sigma
+TrigReport     1  315        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EERhoDown01sigma
+TrigReport     1  316        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EERhoDown01sigma
+TrigReport     1  317        992        992          0          0 flashggVHhadMVAMCSmearLowR9EERhoDown01sigma
+TrigReport     1  318        992        992          0          0 flashggHHWWggTagMCSmearLowR9EERhoDown01sigma
+TrigReport     1  319        992        992          0          0 flashggTagSorterMCSmearLowR9EERhoDown01sigma
+TrigReport     1  320        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EEPhiDown01sigma
+TrigReport     1  321        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EEPhiDown01sigma
+TrigReport     1  322        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EEPhiDown01sigma
+TrigReport     1  323        992        992          0          0 flashggVHhadMVAMCSmearLowR9EEPhiDown01sigma
+TrigReport     1  324        992        992          0          0 flashggHHWWggTagMCSmearLowR9EEPhiDown01sigma
+TrigReport     1  325        992        992          0          0 flashggTagSorterMCSmearLowR9EEPhiDown01sigma
+TrigReport     1  326        992        992          0          0 flashggPrefireDiPhotonsJECUp01sigma
+TrigReport     1  327        992        992          0          0 flashggPreselectedDiPhotonsJECUp01sigma
+TrigReport     1  328        992        992          0          0 flashggDiPhotonMVAJECUp01sigma
+TrigReport     1  329        992        992          0          0 flashggVHhadMVAJECUp01sigma
+TrigReport     1  330        992        992          0          0 flashggHHWWggTagJECUp01sigma
+TrigReport     1  331        992        992          0          0 flashggTagSorterJECUp01sigma
+TrigReport     1  332        992        992          0          0 flashggPrefireDiPhotonsJERUp01sigma
+TrigReport     1  333        992        992          0          0 flashggPreselectedDiPhotonsJERUp01sigma
+TrigReport     1  334        992        992          0          0 flashggDiPhotonMVAJERUp01sigma
+TrigReport     1  335        992        992          0          0 flashggVHhadMVAJERUp01sigma
+TrigReport     1  336        992        992          0          0 flashggHHWWggTagJERUp01sigma
+TrigReport     1  337        992        992          0          0 flashggTagSorterJERUp01sigma
+TrigReport     1  338        992        992          0          0 flashggPrefireDiPhotonsPUJIDShiftUp01sigma
+TrigReport     1  339        992        992          0          0 flashggPreselectedDiPhotonsPUJIDShiftUp01sigma
+TrigReport     1  340        992        992          0          0 flashggDiPhotonMVAPUJIDShiftUp01sigma
+TrigReport     1  341        992        992          0          0 flashggVHhadMVAPUJIDShiftUp01sigma
+TrigReport     1  342        992        992          0          0 flashggHHWWggTagPUJIDShiftUp01sigma
+TrigReport     1  343        992        992          0          0 flashggTagSorterPUJIDShiftUp01sigma
+TrigReport     1  344        992        992          0          0 flashggPrefireDiPhotonsJECDown01sigma
+TrigReport     1  345        992        992          0          0 flashggPreselectedDiPhotonsJECDown01sigma
+TrigReport     1  346        992        992          0          0 flashggDiPhotonMVAJECDown01sigma
+TrigReport     1  347        992        992          0          0 flashggVHhadMVAJECDown01sigma
+TrigReport     1  348        992        992          0          0 flashggHHWWggTagJECDown01sigma
+TrigReport     1  349        992        992          0          0 flashggTagSorterJECDown01sigma
+TrigReport     1  350        992        992          0          0 flashggPrefireDiPhotonsJERDown01sigma
+TrigReport     1  351        992        992          0          0 flashggPreselectedDiPhotonsJERDown01sigma
+TrigReport     1  352        992        992          0          0 flashggDiPhotonMVAJERDown01sigma
+TrigReport     1  353        992        992          0          0 flashggVHhadMVAJERDown01sigma
+TrigReport     1  354        992        992          0          0 flashggHHWWggTagJERDown01sigma
+TrigReport     1  355        992        992          0          0 flashggTagSorterJERDown01sigma
+TrigReport     1  356        992        992          0          0 flashggPrefireDiPhotonsPUJIDShiftDown01sigma
+TrigReport     1  357        992        992          0          0 flashggPreselectedDiPhotonsPUJIDShiftDown01sigma
+TrigReport     1  358        992        992          0          0 flashggDiPhotonMVAPUJIDShiftDown01sigma
+TrigReport     1  359        992        992          0          0 flashggVHhadMVAPUJIDShiftDown01sigma
+TrigReport     1  360        992        992          0          0 flashggHHWWggTagPUJIDShiftDown01sigma
+TrigReport     1  361        992        992          0          0 flashggTagSorterPUJIDShiftDown01sigma
+TrigReport     1  362        992        992          0          0 flashggPrefireDiPhotonsmetJecUncertaintyUp01sigma
+TrigReport     1  363        992        992          0          0 flashggPreselectedDiPhotonsmetJecUncertaintyUp01sigma
+TrigReport     1  364        992        992          0          0 flashggDiPhotonMVAmetJecUncertaintyUp01sigma
+TrigReport     1  365        992        992          0          0 flashggVHhadMVAmetJecUncertaintyUp01sigma
+TrigReport     1  366        992        992          0          0 flashggHHWWggTagmetJecUncertaintyUp01sigma
+TrigReport     1  367        992        992          0          0 flashggTagSortermetJecUncertaintyUp01sigma
+TrigReport     1  368        992        992          0          0 flashggPrefireDiPhotonsmetJerUncertaintyUp01sigma
+TrigReport     1  369        992        992          0          0 flashggPreselectedDiPhotonsmetJerUncertaintyUp01sigma
+TrigReport     1  370        992        992          0          0 flashggDiPhotonMVAmetJerUncertaintyUp01sigma
+TrigReport     1  371        992        992          0          0 flashggVHhadMVAmetJerUncertaintyUp01sigma
+TrigReport     1  372        992        992          0          0 flashggHHWWggTagmetJerUncertaintyUp01sigma
+TrigReport     1  373        992        992          0          0 flashggTagSortermetJerUncertaintyUp01sigma
+TrigReport     1  374        992        992          0          0 flashggPrefireDiPhotonsmetPhoUncertaintyUp01sigma
+TrigReport     1  375        992        992          0          0 flashggPreselectedDiPhotonsmetPhoUncertaintyUp01sigma
+TrigReport     1  376        992        992          0          0 flashggDiPhotonMVAmetPhoUncertaintyUp01sigma
+TrigReport     1  377        992        992          0          0 flashggVHhadMVAmetPhoUncertaintyUp01sigma
+TrigReport     1  378        992        992          0          0 flashggHHWWggTagmetPhoUncertaintyUp01sigma
+TrigReport     1  379        992        992          0          0 flashggTagSortermetPhoUncertaintyUp01sigma
+TrigReport     1  380        992        992          0          0 flashggPrefireDiPhotonsmetUncUncertaintyUp01sigma
+TrigReport     1  381        992        992          0          0 flashggPreselectedDiPhotonsmetUncUncertaintyUp01sigma
+TrigReport     1  382        992        992          0          0 flashggDiPhotonMVAmetUncUncertaintyUp01sigma
+TrigReport     1  383        992        992          0          0 flashggVHhadMVAmetUncUncertaintyUp01sigma
+TrigReport     1  384        992        992          0          0 flashggHHWWggTagmetUncUncertaintyUp01sigma
+TrigReport     1  385        992        992          0          0 flashggTagSortermetUncUncertaintyUp01sigma
+TrigReport     1  386        992        992          0          0 flashggPrefireDiPhotonsmetJecUncertaintyDown01sigma
+TrigReport     1  387        992        992          0          0 flashggPreselectedDiPhotonsmetJecUncertaintyDown01sigma
+TrigReport     1  388        992        992          0          0 flashggDiPhotonMVAmetJecUncertaintyDown01sigma
+TrigReport     1  389        992        992          0          0 flashggVHhadMVAmetJecUncertaintyDown01sigma
+TrigReport     1  390        992        992          0          0 flashggHHWWggTagmetJecUncertaintyDown01sigma
+TrigReport     1  391        992        992          0          0 flashggTagSortermetJecUncertaintyDown01sigma
+TrigReport     1  392        992        992          0          0 flashggPrefireDiPhotonsmetJerUncertaintyDown01sigma
+TrigReport     1  393        992        992          0          0 flashggPreselectedDiPhotonsmetJerUncertaintyDown01sigma
+TrigReport     1  394        992        992          0          0 flashggDiPhotonMVAmetJerUncertaintyDown01sigma
+TrigReport     1  395        992        992          0          0 flashggVHhadMVAmetJerUncertaintyDown01sigma
+TrigReport     1  396        992        992          0          0 flashggHHWWggTagmetJerUncertaintyDown01sigma
+TrigReport     1  397        992        992          0          0 flashggTagSortermetJerUncertaintyDown01sigma
+TrigReport     1  398        992        992          0          0 flashggPrefireDiPhotonsmetPhoUncertaintyDown01sigma
+TrigReport     1  399        992        992          0          0 flashggPreselectedDiPhotonsmetPhoUncertaintyDown01sigma
+TrigReport     1  400        992        992          0          0 flashggDiPhotonMVAmetPhoUncertaintyDown01sigma
+TrigReport     1  401        992        992          0          0 flashggVHhadMVAmetPhoUncertaintyDown01sigma
+TrigReport     1  402        992        992          0          0 flashggHHWWggTagmetPhoUncertaintyDown01sigma
+TrigReport     1  403        992        992          0          0 flashggTagSortermetPhoUncertaintyDown01sigma
+TrigReport     1  404        992        992          0          0 flashggPrefireDiPhotonsmetUncUncertaintyDown01sigma
+TrigReport     1  405        992        992          0          0 flashggPreselectedDiPhotonsmetUncUncertaintyDown01sigma
+TrigReport     1  406        992        992          0          0 flashggDiPhotonMVAmetUncUncertaintyDown01sigma
+TrigReport     1  407        992        992          0          0 flashggVHhadMVAmetUncUncertaintyDown01sigma
+TrigReport     1  408        992        992          0          0 flashggHHWWggTagmetUncUncertaintyDown01sigma
+TrigReport     1  409        992        992          0          0 flashggTagSortermetUncUncertaintyDown01sigma
+TrigReport     1  410        992        992          0          0 flashggSystTagMerger
+TrigReport     1  411        992        929         63          0 HardProcessFinalStateFilter
+TrigReport     1  412        929        929          0          0 tagsDumper
+
+TrigReport ---------- Module Summary ------------
+TrigReport    Visited   Executed     Passed     Failed      Error Name
+TrigReport        992        992        929         63          0 HardProcessFinalStateFilter
+TrigReport       1000       1000       1000          0          0 TriggerResults
+TrigReport        992        992        992          0          0 ak4PFCHSL1FastL2L3Corrector
+TrigReport        992        992        992          0          0 ak4PFCHSL1FastjetCorrector
+TrigReport        992        992        992          0          0 ak4PFCHSL2RelativeCorrector
+TrigReport        992        992        992          0          0 ak4PFCHSL3AbsoluteCorrector
+TrigReport        992        992        992          0          0 flashggDiPhotonMVA
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAFNUFEBDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAFNUFEBUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAFNUFEEDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAFNUFEEUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAJECDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAJECUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAJERDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAJERUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCScaleGain1EBDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCScaleGain1EBUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCScaleGain6EBDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCScaleGain6EBUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCScaleHighR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCScaleHighR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCScaleHighR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCScaleHighR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCScaleLowR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCScaleLowR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCScaleLowR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCScaleLowR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EBPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EBPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EBRhoDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EBRhoUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EEPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EEPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EERhoDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearHighR9EERhoUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EBPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EBPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EBRhoDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EBRhoUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EEPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EEPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EERhoDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMCSmearLowR9EERhoUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMaterialCentralBarrelDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMaterialCentralBarrelUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMaterialForwardDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMaterialForwardUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMaterialOuterBarrelDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMaterialOuterBarrelUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMvaShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAMvaShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAPUJIDShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAPUJIDShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAShowerShapeHighR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAShowerShapeHighR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAShowerShapeHighR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAShowerShapeHighR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAShowerShapeLowR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAShowerShapeLowR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAShowerShapeLowR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAShowerShapeLowR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVASigmaEOverEShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVASigmaEOverEShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAmetJecUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAmetJecUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAmetJerUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAmetJerUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAmetPhoUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAmetPhoUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAmetUncUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonMVAmetUncUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggDiPhotonSystematics
+TrigReport        992        992        992          0          0 flashggDiPhotons
+TrigReport        992        992        992          0          0 flashggDifferentialPhoIdInputsCorrection
+TrigReport        992        992        992          0          0 flashggElectronSystematics
+TrigReport        992        992        992          0          0 flashggHHWWggTag
+TrigReport        992        992        992          0          0 flashggHHWWggTagFNUFEBDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagFNUFEBUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagFNUFEEDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagFNUFEEUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagJECDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagJECUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagJERDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagJERUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCScaleGain1EBDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCScaleGain1EBUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCScaleGain6EBDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCScaleGain6EBUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCScaleHighR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCScaleHighR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCScaleHighR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCScaleHighR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCScaleLowR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCScaleLowR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCScaleLowR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCScaleLowR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearHighR9EBPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearHighR9EBPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearHighR9EBRhoDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearHighR9EBRhoUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearHighR9EEPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearHighR9EEPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearHighR9EERhoDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearHighR9EERhoUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearLowR9EBPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearLowR9EBPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearLowR9EBRhoDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearLowR9EBRhoUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearLowR9EEPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearLowR9EEPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearLowR9EERhoDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMCSmearLowR9EERhoUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMaterialCentralBarrelDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMaterialCentralBarrelUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMaterialForwardDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMaterialForwardUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMaterialOuterBarrelDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMaterialOuterBarrelUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMvaShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagMvaShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagPUJIDShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagPUJIDShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagShowerShapeHighR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagShowerShapeHighR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagShowerShapeHighR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagShowerShapeHighR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagShowerShapeLowR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagShowerShapeLowR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagShowerShapeLowR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagShowerShapeLowR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagSigmaEOverEShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagSigmaEOverEShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagmetJecUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagmetJecUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagmetJerUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagmetJerUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagmetPhoUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagmetPhoUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagmetUncUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggHHWWggTagmetUncUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggJetSystematics0
+TrigReport        992        992        992          0          0 flashggJetSystematics1
+TrigReport        992        992        992          0          0 flashggJetSystematics10
+TrigReport        992        992        992          0          0 flashggJetSystematics11
+TrigReport        992        992        992          0          0 flashggJetSystematics2
+TrigReport        992        992        992          0          0 flashggJetSystematics3
+TrigReport        992        992        992          0          0 flashggJetSystematics4
+TrigReport        992        992        992          0          0 flashggJetSystematics5
+TrigReport        992        992        992          0          0 flashggJetSystematics6
+TrigReport        992        992        992          0          0 flashggJetSystematics7
+TrigReport        992        992        992          0          0 flashggJetSystematics8
+TrigReport        992        992        992          0          0 flashggJetSystematics9
+TrigReport       1000       1000        992          8          0 flashggMetFilters
+TrigReport        992        992        992          0          0 flashggMetSystematics
+TrigReport        992        992        992          0          0 flashggMuonSystematics
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotons
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsFNUFEBDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsFNUFEBUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsFNUFEEDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsFNUFEEUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsJECDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsJECUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsJERDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsJERUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCScaleGain1EBDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCScaleGain1EBUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCScaleGain6EBDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCScaleGain6EBUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCScaleHighR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCScaleHighR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCScaleHighR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCScaleHighR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCScaleLowR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCScaleLowR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCScaleLowR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCScaleLowR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EBPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EBPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EBRhoDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EBRhoUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EEPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EEPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EERhoDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearHighR9EERhoUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EBPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EBPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EBRhoDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EBRhoUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EEPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EEPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EERhoDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMCSmearLowR9EERhoUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMaterialCentralBarrelDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMaterialCentralBarrelUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMaterialForwardDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMaterialForwardUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMaterialOuterBarrelDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMaterialOuterBarrelUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMvaShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsMvaShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsPUJIDShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsPUJIDShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsShowerShapeHighR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsShowerShapeHighR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsShowerShapeHighR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsShowerShapeHighR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsShowerShapeLowR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsShowerShapeLowR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsShowerShapeLowR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsShowerShapeLowR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsSigmaEOverEShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsSigmaEOverEShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsmetJecUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsmetJecUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsmetJerUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsmetJerUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsmetPhoUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsmetPhoUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsmetUncUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggPrefireDiPhotonsmetUncUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotons
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsFNUFEBDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsFNUFEBUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsFNUFEEDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsFNUFEEUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsJECDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsJECUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsJERDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsJERUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCScaleGain1EBDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCScaleGain1EBUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCScaleGain6EBDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCScaleGain6EBUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCScaleHighR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCScaleHighR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCScaleHighR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCScaleHighR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCScaleLowR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCScaleLowR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCScaleLowR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCScaleLowR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EBPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EBPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EBRhoDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EBRhoUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EEPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EEPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EERhoDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearHighR9EERhoUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EBPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EBPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EBRhoDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EBRhoUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EEPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EEPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EERhoDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMCSmearLowR9EERhoUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMaterialCentralBarrelDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMaterialCentralBarrelUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMaterialForwardDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMaterialForwardUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMaterialOuterBarrelDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMaterialOuterBarrelUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMvaShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsMvaShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsPUJIDShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsPUJIDShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeHighR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeHighR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeHighR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeHighR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeLowR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeLowR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeLowR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsShowerShapeLowR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsSigmaEOverEShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsSigmaEOverEShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsmetJecUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsmetJecUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsmetJerUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsmetJerUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsmetPhoUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsmetPhoUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsmetUncUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggPreselectedDiPhotonsmetUncUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggSystTagMerger
+TrigReport        992        992        992          0          0 flashggTagSorter
+TrigReport        992        992        992          0          0 flashggTagSorterFNUFEBDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterFNUFEBUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterFNUFEEDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterFNUFEEUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterJECDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterJECUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterJERDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterJERUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCScaleGain1EBDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCScaleGain1EBUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCScaleGain6EBDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCScaleGain6EBUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCScaleHighR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCScaleHighR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCScaleHighR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCScaleHighR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCScaleLowR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCScaleLowR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCScaleLowR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCScaleLowR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearHighR9EBPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearHighR9EBPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearHighR9EBRhoDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearHighR9EBRhoUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearHighR9EEPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearHighR9EEPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearHighR9EERhoDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearHighR9EERhoUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearLowR9EBPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearLowR9EBPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearLowR9EBRhoDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearLowR9EBRhoUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearLowR9EEPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearLowR9EEPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearLowR9EERhoDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMCSmearLowR9EERhoUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMaterialCentralBarrelDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMaterialCentralBarrelUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMaterialForwardDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMaterialForwardUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMaterialOuterBarrelDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMaterialOuterBarrelUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMvaShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterMvaShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterPUJIDShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterPUJIDShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterShowerShapeHighR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterShowerShapeHighR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterShowerShapeHighR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterShowerShapeHighR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterShowerShapeLowR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterShowerShapeLowR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterShowerShapeLowR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterShowerShapeLowR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterSigmaEOverEShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSorterSigmaEOverEShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSortermetJecUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSortermetJecUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSortermetJerUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSortermetJerUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSortermetPhoUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSortermetPhoUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggTagSortermetUncUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggTagSortermetUncUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggUnpackedJets
+TrigReport        992        992        992          0          0 flashggVHhadMVA
+TrigReport        992        992        992          0          0 flashggVHhadMVAFNUFEBDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAFNUFEBUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAFNUFEEDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAFNUFEEUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAJECDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAJECUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAJERDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAJERUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCScaleGain1EBDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCScaleGain1EBUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCScaleGain6EBDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCScaleGain6EBUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCScaleHighR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCScaleHighR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCScaleHighR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCScaleHighR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCScaleLowR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCScaleLowR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCScaleLowR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCScaleLowR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearHighR9EBPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearHighR9EBPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearHighR9EBRhoDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearHighR9EBRhoUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearHighR9EEPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearHighR9EEPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearHighR9EERhoDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearHighR9EERhoUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearLowR9EBPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearLowR9EBPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearLowR9EBRhoDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearLowR9EBRhoUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearLowR9EEPhiDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearLowR9EEPhiUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearLowR9EERhoDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMCSmearLowR9EERhoUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMaterialCentralBarrelDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMaterialCentralBarrelUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMaterialForwardDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMaterialForwardUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMaterialOuterBarrelDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMaterialOuterBarrelUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMvaShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAMvaShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAPUJIDShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAPUJIDShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAShowerShapeHighR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAShowerShapeHighR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAShowerShapeHighR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAShowerShapeHighR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAShowerShapeLowR9EBDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAShowerShapeLowR9EBUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAShowerShapeLowR9EEDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAShowerShapeLowR9EEUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVASigmaEOverEShiftDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVASigmaEOverEShiftUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAmetJecUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAmetJecUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAmetJerUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAmetJerUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAmetPhoUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAmetPhoUncertaintyUp01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAmetUncUncertaintyDown01sigma
+TrigReport        992        992        992          0          0 flashggVHhadMVAmetUncUncertaintyUp01sigma
+TrigReport       1000       1000       1000          0          0 p
+TrigReport        929        929        929          0          0 tagsDumper
+
+TimeReport ---------- Event  Summary ---[sec]----
+TimeReport       event loop CPU/event = 0.728730
+TimeReport      event loop Real/event = 5.205719
+TimeReport     sum Streams Real/event = 5.128294
+TimeReport efficiency CPU/Real/thread = 0.139987
+
+TimeReport ---------- Path   Summary ---[Real sec]----
+TimeReport  per event     per exec  Name
+TimeReport   5.124082     5.124082  p
+TimeReport  per event     per exec  Name
+
+TimeReport -------End-Path   Summary ---[Real sec]----
+TimeReport  per event     per exec  Name
+TimeReport  per event     per exec  Name
+
+TimeReport ---------- Modules in Path: p ---[Real sec]----
+TimeReport  per event    per visit  Name
+TimeReport   0.000703     0.000703  flashggMetFilters
+TimeReport   0.004071     0.004104  flashggDiPhotons
+TimeReport   1.902606     1.917949  flashggDifferentialPhoIdInputsCorrection
+TimeReport   0.386059     0.389173  flashggDiPhotonSystematics
+TimeReport   1.152319     1.161612  flashggMetSystematics
+TimeReport   0.001526     0.001539  flashggMuonSystematics
+TimeReport   0.003351     0.003378  flashggElectronSystematics
+TimeReport   0.001428     0.001440  flashggUnpackedJets
+TimeReport   0.089304     0.090024  flashggJetSystematics0
+TimeReport   0.004788     0.004826  flashggJetSystematics1
+TimeReport   0.003258     0.003285  flashggJetSystematics2
+TimeReport   0.004122     0.004155  flashggJetSystematics3
+TimeReport   0.003455     0.003483  flashggJetSystematics4
+TimeReport   0.003208     0.003234  flashggJetSystematics5
+TimeReport   0.003269     0.003295  flashggJetSystematics6
+TimeReport   0.003376     0.003403  flashggJetSystematics7
+TimeReport   0.003216     0.003242  flashggJetSystematics8
+TimeReport   0.003485     0.003513  flashggJetSystematics9
+TimeReport   0.003391     0.003419  flashggJetSystematics10
+TimeReport   0.003437     0.003465  flashggJetSystematics11
+TimeReport   0.001997     0.002013  flashggPrefireDiPhotons
+TimeReport   0.005304     0.005347  flashggPreselectedDiPhotons
+TimeReport   0.009663     0.009741  flashggDiPhotonMVA
+TimeReport   0.000724     0.000730  flashggVHhadMVA
+TimeReport   0.002504     0.002524  flashggHHWWggTag
+TimeReport   0.000196     0.000198  flashggTagSorter
+TimeReport   0.001830     0.001845  flashggPrefireDiPhotonsMvaShiftUp01sigma
+TimeReport   0.001384     0.001395  flashggPreselectedDiPhotonsMvaShiftUp01sigma
+TimeReport   0.009156     0.009230  flashggDiPhotonMVAMvaShiftUp01sigma
+TimeReport   0.000477     0.000480  flashggVHhadMVAMvaShiftUp01sigma
+TimeReport   0.000236     0.000238  flashggHHWWggTagMvaShiftUp01sigma
+TimeReport   0.000032     0.000032  flashggTagSorterMvaShiftUp01sigma
+TimeReport   0.001501     0.001513  flashggPrefireDiPhotonsSigmaEOverEShiftUp01sigma
+TimeReport   0.000783     0.000790  flashggPreselectedDiPhotonsSigmaEOverEShiftUp01sigma
+TimeReport   0.010062     0.010144  flashggDiPhotonMVASigmaEOverEShiftUp01sigma
+TimeReport   0.000608     0.000613  flashggVHhadMVASigmaEOverEShiftUp01sigma
+TimeReport   0.000291     0.000294  flashggHHWWggTagSigmaEOverEShiftUp01sigma
+TimeReport   0.000027     0.000028  flashggTagSorterSigmaEOverEShiftUp01sigma
+TimeReport   0.001551     0.001563  flashggPrefireDiPhotonsMaterialCentralBarrelUp01sigma
+TimeReport   0.000512     0.000516  flashggPreselectedDiPhotonsMaterialCentralBarrelUp01sigma
+TimeReport   0.009987     0.010068  flashggDiPhotonMVAMaterialCentralBarrelUp01sigma
+TimeReport   0.000519     0.000524  flashggVHhadMVAMaterialCentralBarrelUp01sigma
+TimeReport   0.000163     0.000164  flashggHHWWggTagMaterialCentralBarrelUp01sigma
+TimeReport   0.000060     0.000061  flashggTagSorterMaterialCentralBarrelUp01sigma
+TimeReport   0.001599     0.001612  flashggPrefireDiPhotonsMaterialOuterBarrelUp01sigma
+TimeReport   0.000452     0.000455  flashggPreselectedDiPhotonsMaterialOuterBarrelUp01sigma
+TimeReport   0.009412     0.009488  flashggDiPhotonMVAMaterialOuterBarrelUp01sigma
+TimeReport   0.000858     0.000865  flashggVHhadMVAMaterialOuterBarrelUp01sigma
+TimeReport   0.000332     0.000335  flashggHHWWggTagMaterialOuterBarrelUp01sigma
+TimeReport   0.000029     0.000029  flashggTagSorterMaterialOuterBarrelUp01sigma
+TimeReport   0.001662     0.001675  flashggPrefireDiPhotonsMaterialForwardUp01sigma
+TimeReport   0.000762     0.000769  flashggPreselectedDiPhotonsMaterialForwardUp01sigma
+TimeReport   0.010135     0.010216  flashggDiPhotonMVAMaterialForwardUp01sigma
+TimeReport   0.000491     0.000495  flashggVHhadMVAMaterialForwardUp01sigma
+TimeReport   0.000362     0.000365  flashggHHWWggTagMaterialForwardUp01sigma
+TimeReport   0.000027     0.000027  flashggTagSorterMaterialForwardUp01sigma
+TimeReport   0.001731     0.001745  flashggPrefireDiPhotonsFNUFEBUp01sigma
+TimeReport   0.001178     0.001188  flashggPreselectedDiPhotonsFNUFEBUp01sigma
+TimeReport   0.008010     0.008075  flashggDiPhotonMVAFNUFEBUp01sigma
+TimeReport   0.000628     0.000633  flashggVHhadMVAFNUFEBUp01sigma
+TimeReport   0.000287     0.000289  flashggHHWWggTagFNUFEBUp01sigma
+TimeReport   0.000252     0.000254  flashggTagSorterFNUFEBUp01sigma
+TimeReport   0.001865     0.001880  flashggPrefireDiPhotonsFNUFEEUp01sigma
+TimeReport   0.000956     0.000964  flashggPreselectedDiPhotonsFNUFEEUp01sigma
+TimeReport   0.008565     0.008634  flashggDiPhotonMVAFNUFEEUp01sigma
+TimeReport   0.001050     0.001058  flashggVHhadMVAFNUFEEUp01sigma
+TimeReport   0.000416     0.000419  flashggHHWWggTagFNUFEEUp01sigma
+TimeReport   0.000140     0.000141  flashggTagSorterFNUFEEUp01sigma
+TimeReport   0.003060     0.003084  flashggPrefireDiPhotonsMCScaleGain6EBUp01sigma
+TimeReport   0.000569     0.000573  flashggPreselectedDiPhotonsMCScaleGain6EBUp01sigma
+TimeReport   0.008252     0.008319  flashggDiPhotonMVAMCScaleGain6EBUp01sigma
+TimeReport   0.000455     0.000459  flashggVHhadMVAMCScaleGain6EBUp01sigma
+TimeReport   0.000214     0.000215  flashggHHWWggTagMCScaleGain6EBUp01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterMCScaleGain6EBUp01sigma
+TimeReport   0.001462     0.001474  flashggPrefireDiPhotonsMCScaleGain1EBUp01sigma
+TimeReport   0.000523     0.000527  flashggPreselectedDiPhotonsMCScaleGain1EBUp01sigma
+TimeReport   0.008337     0.008404  flashggDiPhotonMVAMCScaleGain1EBUp01sigma
+TimeReport   0.000612     0.000617  flashggVHhadMVAMCScaleGain1EBUp01sigma
+TimeReport   0.000286     0.000288  flashggHHWWggTagMCScaleGain1EBUp01sigma
+TimeReport   0.000039     0.000039  flashggTagSorterMCScaleGain1EBUp01sigma
+TimeReport   0.001561     0.001573  flashggPrefireDiPhotonsShowerShapeHighR9EBUp01sigma
+TimeReport   0.000385     0.000388  flashggPreselectedDiPhotonsShowerShapeHighR9EBUp01sigma
+TimeReport   0.006463     0.006515  flashggDiPhotonMVAShowerShapeHighR9EBUp01sigma
+TimeReport   0.000511     0.000515  flashggVHhadMVAShowerShapeHighR9EBUp01sigma
+TimeReport   0.000267     0.000269  flashggHHWWggTagShowerShapeHighR9EBUp01sigma
+TimeReport   0.000031     0.000031  flashggTagSorterShowerShapeHighR9EBUp01sigma
+TimeReport   0.001747     0.001761  flashggPrefireDiPhotonsMCScaleHighR9EBUp01sigma
+TimeReport   0.000878     0.000885  flashggPreselectedDiPhotonsMCScaleHighR9EBUp01sigma
+TimeReport   0.010038     0.010119  flashggDiPhotonMVAMCScaleHighR9EBUp01sigma
+TimeReport   0.000631     0.000637  flashggVHhadMVAMCScaleHighR9EBUp01sigma
+TimeReport   0.000175     0.000176  flashggHHWWggTagMCScaleHighR9EBUp01sigma
+TimeReport   0.000030     0.000030  flashggTagSorterMCScaleHighR9EBUp01sigma
+TimeReport   0.001490     0.001502  flashggPrefireDiPhotonsMCSmearHighR9EBRhoUp01sigma
+TimeReport   0.000578     0.000583  flashggPreselectedDiPhotonsMCSmearHighR9EBRhoUp01sigma
+TimeReport   0.008546     0.008615  flashggDiPhotonMVAMCSmearHighR9EBRhoUp01sigma
+TimeReport   0.000637     0.000642  flashggVHhadMVAMCSmearHighR9EBRhoUp01sigma
+TimeReport   0.000164     0.000166  flashggHHWWggTagMCSmearHighR9EBRhoUp01sigma
+TimeReport   0.000081     0.000082  flashggTagSorterMCSmearHighR9EBRhoUp01sigma
+TimeReport   0.001531     0.001543  flashggPrefireDiPhotonsMCSmearHighR9EBPhiUp01sigma
+TimeReport   0.000552     0.000556  flashggPreselectedDiPhotonsMCSmearHighR9EBPhiUp01sigma
+TimeReport   0.006808     0.006863  flashggDiPhotonMVAMCSmearHighR9EBPhiUp01sigma
+TimeReport   0.000200     0.000202  flashggVHhadMVAMCSmearHighR9EBPhiUp01sigma
+TimeReport   0.000202     0.000204  flashggHHWWggTagMCSmearHighR9EBPhiUp01sigma
+TimeReport   0.000027     0.000027  flashggTagSorterMCSmearHighR9EBPhiUp01sigma
+TimeReport   0.001531     0.001543  flashggPrefireDiPhotonsShowerShapeHighR9EEUp01sigma
+TimeReport   0.000630     0.000636  flashggPreselectedDiPhotonsShowerShapeHighR9EEUp01sigma
+TimeReport   0.006322     0.006373  flashggDiPhotonMVAShowerShapeHighR9EEUp01sigma
+TimeReport   0.000825     0.000832  flashggVHhadMVAShowerShapeHighR9EEUp01sigma
+TimeReport   0.000230     0.000232  flashggHHWWggTagShowerShapeHighR9EEUp01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterShowerShapeHighR9EEUp01sigma
+TimeReport   0.001734     0.001748  flashggPrefireDiPhotonsMCScaleHighR9EEUp01sigma
+TimeReport   0.001046     0.001054  flashggPreselectedDiPhotonsMCScaleHighR9EEUp01sigma
+TimeReport   0.007336     0.007395  flashggDiPhotonMVAMCScaleHighR9EEUp01sigma
+TimeReport   0.000448     0.000452  flashggVHhadMVAMCScaleHighR9EEUp01sigma
+TimeReport   0.000281     0.000284  flashggHHWWggTagMCScaleHighR9EEUp01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterMCScaleHighR9EEUp01sigma
+TimeReport   0.001414     0.001425  flashggPrefireDiPhotonsMCSmearHighR9EERhoUp01sigma
+TimeReport   0.000427     0.000430  flashggPreselectedDiPhotonsMCSmearHighR9EERhoUp01sigma
+TimeReport   0.006837     0.006892  flashggDiPhotonMVAMCSmearHighR9EERhoUp01sigma
+TimeReport   0.000462     0.000466  flashggVHhadMVAMCSmearHighR9EERhoUp01sigma
+TimeReport   0.000204     0.000205  flashggHHWWggTagMCSmearHighR9EERhoUp01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterMCSmearHighR9EERhoUp01sigma
+TimeReport   0.001469     0.001481  flashggPrefireDiPhotonsMCSmearHighR9EEPhiUp01sigma
+TimeReport   0.000829     0.000836  flashggPreselectedDiPhotonsMCSmearHighR9EEPhiUp01sigma
+TimeReport   0.007804     0.007866  flashggDiPhotonMVAMCSmearHighR9EEPhiUp01sigma
+TimeReport   0.000543     0.000547  flashggVHhadMVAMCSmearHighR9EEPhiUp01sigma
+TimeReport   0.000179     0.000180  flashggHHWWggTagMCSmearHighR9EEPhiUp01sigma
+TimeReport   0.000028     0.000029  flashggTagSorterMCSmearHighR9EEPhiUp01sigma
+TimeReport   0.001525     0.001538  flashggPrefireDiPhotonsShowerShapeLowR9EBUp01sigma
+TimeReport   0.000562     0.000566  flashggPreselectedDiPhotonsShowerShapeLowR9EBUp01sigma
+TimeReport   0.008077     0.008142  flashggDiPhotonMVAShowerShapeLowR9EBUp01sigma
+TimeReport   0.001221     0.001231  flashggVHhadMVAShowerShapeLowR9EBUp01sigma
+TimeReport   0.000206     0.000208  flashggHHWWggTagShowerShapeLowR9EBUp01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterShowerShapeLowR9EBUp01sigma
+TimeReport   0.001570     0.001583  flashggPrefireDiPhotonsMCScaleLowR9EBUp01sigma
+TimeReport   0.000815     0.000821  flashggPreselectedDiPhotonsMCScaleLowR9EBUp01sigma
+TimeReport   0.007875     0.007938  flashggDiPhotonMVAMCScaleLowR9EBUp01sigma
+TimeReport   0.000514     0.000518  flashggVHhadMVAMCScaleLowR9EBUp01sigma
+TimeReport   0.000317     0.000320  flashggHHWWggTagMCScaleLowR9EBUp01sigma
+TimeReport   0.000031     0.000031  flashggTagSorterMCScaleLowR9EBUp01sigma
+TimeReport   0.001566     0.001579  flashggPrefireDiPhotonsMCSmearLowR9EBRhoUp01sigma
+TimeReport   0.000824     0.000830  flashggPreselectedDiPhotonsMCSmearLowR9EBRhoUp01sigma
+TimeReport   0.007031     0.007088  flashggDiPhotonMVAMCSmearLowR9EBRhoUp01sigma
+TimeReport   0.000501     0.000505  flashggVHhadMVAMCSmearLowR9EBRhoUp01sigma
+TimeReport   0.000165     0.000166  flashggHHWWggTagMCSmearLowR9EBRhoUp01sigma
+TimeReport   0.000029     0.000030  flashggTagSorterMCSmearLowR9EBRhoUp01sigma
+TimeReport   0.001573     0.001585  flashggPrefireDiPhotonsMCSmearLowR9EBPhiUp01sigma
+TimeReport   0.000555     0.000560  flashggPreselectedDiPhotonsMCSmearLowR9EBPhiUp01sigma
+TimeReport   0.010049     0.010130  flashggDiPhotonMVAMCSmearLowR9EBPhiUp01sigma
+TimeReport   0.000784     0.000791  flashggVHhadMVAMCSmearLowR9EBPhiUp01sigma
+TimeReport   0.000182     0.000183  flashggHHWWggTagMCSmearLowR9EBPhiUp01sigma
+TimeReport   0.000031     0.000031  flashggTagSorterMCSmearLowR9EBPhiUp01sigma
+TimeReport   0.001519     0.001531  flashggPrefireDiPhotonsShowerShapeLowR9EEUp01sigma
+TimeReport   0.000432     0.000436  flashggPreselectedDiPhotonsShowerShapeLowR9EEUp01sigma
+TimeReport   0.008453     0.008521  flashggDiPhotonMVAShowerShapeLowR9EEUp01sigma
+TimeReport   0.000620     0.000625  flashggVHhadMVAShowerShapeLowR9EEUp01sigma
+TimeReport   0.000182     0.000184  flashggHHWWggTagShowerShapeLowR9EEUp01sigma
+TimeReport   0.000058     0.000058  flashggTagSorterShowerShapeLowR9EEUp01sigma
+TimeReport   0.001612     0.001624  flashggPrefireDiPhotonsMCScaleLowR9EEUp01sigma
+TimeReport   0.000613     0.000618  flashggPreselectedDiPhotonsMCScaleLowR9EEUp01sigma
+TimeReport   0.007962     0.008026  flashggDiPhotonMVAMCScaleLowR9EEUp01sigma
+TimeReport   0.000313     0.000316  flashggVHhadMVAMCScaleLowR9EEUp01sigma
+TimeReport   0.000247     0.000249  flashggHHWWggTagMCScaleLowR9EEUp01sigma
+TimeReport   0.000040     0.000040  flashggTagSorterMCScaleLowR9EEUp01sigma
+TimeReport   0.001470     0.001482  flashggPrefireDiPhotonsMCSmearLowR9EERhoUp01sigma
+TimeReport   0.000727     0.000733  flashggPreselectedDiPhotonsMCSmearLowR9EERhoUp01sigma
+TimeReport   0.007233     0.007292  flashggDiPhotonMVAMCSmearLowR9EERhoUp01sigma
+TimeReport   0.000445     0.000449  flashggVHhadMVAMCSmearLowR9EERhoUp01sigma
+TimeReport   0.000223     0.000225  flashggHHWWggTagMCSmearLowR9EERhoUp01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterMCSmearLowR9EERhoUp01sigma
+TimeReport   0.001626     0.001639  flashggPrefireDiPhotonsMCSmearLowR9EEPhiUp01sigma
+TimeReport   0.000429     0.000432  flashggPreselectedDiPhotonsMCSmearLowR9EEPhiUp01sigma
+TimeReport   0.006266     0.006317  flashggDiPhotonMVAMCSmearLowR9EEPhiUp01sigma
+TimeReport   0.000462     0.000465  flashggVHhadMVAMCSmearLowR9EEPhiUp01sigma
+TimeReport   0.000164     0.000165  flashggHHWWggTagMCSmearLowR9EEPhiUp01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterMCSmearLowR9EEPhiUp01sigma
+TimeReport   0.001495     0.001507  flashggPrefireDiPhotonsMvaShiftDown01sigma
+TimeReport   0.000444     0.000448  flashggPreselectedDiPhotonsMvaShiftDown01sigma
+TimeReport   0.006843     0.006898  flashggDiPhotonMVAMvaShiftDown01sigma
+TimeReport   0.000441     0.000444  flashggVHhadMVAMvaShiftDown01sigma
+TimeReport   0.000229     0.000230  flashggHHWWggTagMvaShiftDown01sigma
+TimeReport   0.000027     0.000027  flashggTagSorterMvaShiftDown01sigma
+TimeReport   0.001503     0.001515  flashggPrefireDiPhotonsSigmaEOverEShiftDown01sigma
+TimeReport   0.000463     0.000467  flashggPreselectedDiPhotonsSigmaEOverEShiftDown01sigma
+TimeReport   0.008232     0.008298  flashggDiPhotonMVASigmaEOverEShiftDown01sigma
+TimeReport   0.000524     0.000528  flashggVHhadMVASigmaEOverEShiftDown01sigma
+TimeReport   0.000191     0.000193  flashggHHWWggTagSigmaEOverEShiftDown01sigma
+TimeReport   0.000027     0.000027  flashggTagSorterSigmaEOverEShiftDown01sigma
+TimeReport   0.001426     0.001437  flashggPrefireDiPhotonsMaterialCentralBarrelDown01sigma
+TimeReport   0.000507     0.000512  flashggPreselectedDiPhotonsMaterialCentralBarrelDown01sigma
+TimeReport   0.006060     0.006109  flashggDiPhotonMVAMaterialCentralBarrelDown01sigma
+TimeReport   0.000382     0.000385  flashggVHhadMVAMaterialCentralBarrelDown01sigma
+TimeReport   0.000236     0.000238  flashggHHWWggTagMaterialCentralBarrelDown01sigma
+TimeReport   0.000029     0.000029  flashggTagSorterMaterialCentralBarrelDown01sigma
+TimeReport   0.001425     0.001437  flashggPrefireDiPhotonsMaterialOuterBarrelDown01sigma
+TimeReport   0.000344     0.000346  flashggPreselectedDiPhotonsMaterialOuterBarrelDown01sigma
+TimeReport   0.007638     0.007699  flashggDiPhotonMVAMaterialOuterBarrelDown01sigma
+TimeReport   0.000486     0.000490  flashggVHhadMVAMaterialOuterBarrelDown01sigma
+TimeReport   0.000162     0.000163  flashggHHWWggTagMaterialOuterBarrelDown01sigma
+TimeReport   0.000027     0.000027  flashggTagSorterMaterialOuterBarrelDown01sigma
+TimeReport   0.001541     0.001553  flashggPrefireDiPhotonsMaterialForwardDown01sigma
+TimeReport   0.000543     0.000547  flashggPreselectedDiPhotonsMaterialForwardDown01sigma
+TimeReport   0.008530     0.008599  flashggDiPhotonMVAMaterialForwardDown01sigma
+TimeReport   0.000617     0.000622  flashggVHhadMVAMaterialForwardDown01sigma
+TimeReport   0.000222     0.000224  flashggHHWWggTagMaterialForwardDown01sigma
+TimeReport   0.000029     0.000029  flashggTagSorterMaterialForwardDown01sigma
+TimeReport   0.001494     0.001506  flashggPrefireDiPhotonsFNUFEBDown01sigma
+TimeReport   0.000536     0.000540  flashggPreselectedDiPhotonsFNUFEBDown01sigma
+TimeReport   0.006633     0.006686  flashggDiPhotonMVAFNUFEBDown01sigma
+TimeReport   0.000409     0.000412  flashggVHhadMVAFNUFEBDown01sigma
+TimeReport   0.000183     0.000184  flashggHHWWggTagFNUFEBDown01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterFNUFEBDown01sigma
+TimeReport   0.001536     0.001548  flashggPrefireDiPhotonsFNUFEEDown01sigma
+TimeReport   0.000715     0.000721  flashggPreselectedDiPhotonsFNUFEEDown01sigma
+TimeReport   0.006810     0.006865  flashggDiPhotonMVAFNUFEEDown01sigma
+TimeReport   0.001257     0.001267  flashggVHhadMVAFNUFEEDown01sigma
+TimeReport   0.000162     0.000163  flashggHHWWggTagFNUFEEDown01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterFNUFEEDown01sigma
+TimeReport   0.001424     0.001436  flashggPrefireDiPhotonsMCScaleGain6EBDown01sigma
+TimeReport   0.000339     0.000342  flashggPreselectedDiPhotonsMCScaleGain6EBDown01sigma
+TimeReport   0.009351     0.009427  flashggDiPhotonMVAMCScaleGain6EBDown01sigma
+TimeReport   0.000343     0.000346  flashggVHhadMVAMCScaleGain6EBDown01sigma
+TimeReport   0.000381     0.000384  flashggHHWWggTagMCScaleGain6EBDown01sigma
+TimeReport   0.000132     0.000133  flashggTagSorterMCScaleGain6EBDown01sigma
+TimeReport   0.001530     0.001543  flashggPrefireDiPhotonsMCScaleGain1EBDown01sigma
+TimeReport   0.000480     0.000484  flashggPreselectedDiPhotonsMCScaleGain1EBDown01sigma
+TimeReport   0.008808     0.008879  flashggDiPhotonMVAMCScaleGain1EBDown01sigma
+TimeReport   0.000895     0.000902  flashggVHhadMVAMCScaleGain1EBDown01sigma
+TimeReport   0.000187     0.000189  flashggHHWWggTagMCScaleGain1EBDown01sigma
+TimeReport   0.000064     0.000064  flashggTagSorterMCScaleGain1EBDown01sigma
+TimeReport   0.001546     0.001558  flashggPrefireDiPhotonsShowerShapeHighR9EBDown01sigma
+TimeReport   0.000731     0.000736  flashggPreselectedDiPhotonsShowerShapeHighR9EBDown01sigma
+TimeReport   0.007331     0.007390  flashggDiPhotonMVAShowerShapeHighR9EBDown01sigma
+TimeReport   0.000852     0.000859  flashggVHhadMVAShowerShapeHighR9EBDown01sigma
+TimeReport   0.000274     0.000276  flashggHHWWggTagShowerShapeHighR9EBDown01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterShowerShapeHighR9EBDown01sigma
+TimeReport   0.001476     0.001487  flashggPrefireDiPhotonsMCScaleHighR9EBDown01sigma
+TimeReport   0.000787     0.000793  flashggPreselectedDiPhotonsMCScaleHighR9EBDown01sigma
+TimeReport   0.007849     0.007913  flashggDiPhotonMVAMCScaleHighR9EBDown01sigma
+TimeReport   0.000542     0.000546  flashggVHhadMVAMCScaleHighR9EBDown01sigma
+TimeReport   0.000165     0.000166  flashggHHWWggTagMCScaleHighR9EBDown01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterMCScaleHighR9EBDown01sigma
+TimeReport   0.001525     0.001538  flashggPrefireDiPhotonsMCSmearHighR9EBRhoDown01sigma
+TimeReport   0.000618     0.000623  flashggPreselectedDiPhotonsMCSmearHighR9EBRhoDown01sigma
+TimeReport   0.006950     0.007006  flashggDiPhotonMVAMCSmearHighR9EBRhoDown01sigma
+TimeReport   0.000704     0.000710  flashggVHhadMVAMCSmearHighR9EBRhoDown01sigma
+TimeReport   0.000164     0.000165  flashggHHWWggTagMCSmearHighR9EBRhoDown01sigma
+TimeReport   0.000107     0.000108  flashggTagSorterMCSmearHighR9EBRhoDown01sigma
+TimeReport   0.001545     0.001557  flashggPrefireDiPhotonsMCSmearHighR9EBPhiDown01sigma
+TimeReport   0.000734     0.000740  flashggPreselectedDiPhotonsMCSmearHighR9EBPhiDown01sigma
+TimeReport   0.007192     0.007250  flashggDiPhotonMVAMCSmearHighR9EBPhiDown01sigma
+TimeReport   0.000463     0.000467  flashggVHhadMVAMCSmearHighR9EBPhiDown01sigma
+TimeReport   0.000189     0.000190  flashggHHWWggTagMCSmearHighR9EBPhiDown01sigma
+TimeReport   0.000027     0.000027  flashggTagSorterMCSmearHighR9EBPhiDown01sigma
+TimeReport   0.001448     0.001460  flashggPrefireDiPhotonsShowerShapeHighR9EEDown01sigma
+TimeReport   0.000511     0.000516  flashggPreselectedDiPhotonsShowerShapeHighR9EEDown01sigma
+TimeReport   0.008775     0.008846  flashggDiPhotonMVAShowerShapeHighR9EEDown01sigma
+TimeReport   0.000495     0.000499  flashggVHhadMVAShowerShapeHighR9EEDown01sigma
+TimeReport   0.000184     0.000185  flashggHHWWggTagShowerShapeHighR9EEDown01sigma
+TimeReport   0.000027     0.000028  flashggTagSorterShowerShapeHighR9EEDown01sigma
+TimeReport   0.001587     0.001600  flashggPrefireDiPhotonsMCScaleHighR9EEDown01sigma
+TimeReport   0.000744     0.000750  flashggPreselectedDiPhotonsMCScaleHighR9EEDown01sigma
+TimeReport   0.007097     0.007155  flashggDiPhotonMVAMCScaleHighR9EEDown01sigma
+TimeReport   0.000686     0.000691  flashggVHhadMVAMCScaleHighR9EEDown01sigma
+TimeReport   0.000282     0.000284  flashggHHWWggTagMCScaleHighR9EEDown01sigma
+TimeReport   0.000027     0.000028  flashggTagSorterMCScaleHighR9EEDown01sigma
+TimeReport   0.001834     0.001849  flashggPrefireDiPhotonsMCSmearHighR9EERhoDown01sigma
+TimeReport   0.000617     0.000622  flashggPreselectedDiPhotonsMCSmearHighR9EERhoDown01sigma
+TimeReport   0.008229     0.008295  flashggDiPhotonMVAMCSmearHighR9EERhoDown01sigma
+TimeReport   0.001159     0.001168  flashggVHhadMVAMCSmearHighR9EERhoDown01sigma
+TimeReport   0.000252     0.000254  flashggHHWWggTagMCSmearHighR9EERhoDown01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterMCSmearHighR9EERhoDown01sigma
+TimeReport   0.001651     0.001665  flashggPrefireDiPhotonsMCSmearHighR9EEPhiDown01sigma
+TimeReport   0.000626     0.000631  flashggPreselectedDiPhotonsMCSmearHighR9EEPhiDown01sigma
+TimeReport   0.008663     0.008733  flashggDiPhotonMVAMCSmearHighR9EEPhiDown01sigma
+TimeReport   0.000542     0.000546  flashggVHhadMVAMCSmearHighR9EEPhiDown01sigma
+TimeReport   0.000303     0.000305  flashggHHWWggTagMCSmearHighR9EEPhiDown01sigma
+TimeReport   0.000027     0.000027  flashggTagSorterMCSmearHighR9EEPhiDown01sigma
+TimeReport   0.001570     0.001583  flashggPrefireDiPhotonsShowerShapeLowR9EBDown01sigma
+TimeReport   0.000430     0.000433  flashggPreselectedDiPhotonsShowerShapeLowR9EBDown01sigma
+TimeReport   0.008122     0.008188  flashggDiPhotonMVAShowerShapeLowR9EBDown01sigma
+TimeReport   0.001055     0.001063  flashggVHhadMVAShowerShapeLowR9EBDown01sigma
+TimeReport   0.000201     0.000202  flashggHHWWggTagShowerShapeLowR9EBDown01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterShowerShapeLowR9EBDown01sigma
+TimeReport   0.001597     0.001610  flashggPrefireDiPhotonsMCScaleLowR9EBDown01sigma
+TimeReport   0.000379     0.000382  flashggPreselectedDiPhotonsMCScaleLowR9EBDown01sigma
+TimeReport   0.006729     0.006783  flashggDiPhotonMVAMCScaleLowR9EBDown01sigma
+TimeReport   0.000592     0.000597  flashggVHhadMVAMCScaleLowR9EBDown01sigma
+TimeReport   0.000176     0.000177  flashggHHWWggTagMCScaleLowR9EBDown01sigma
+TimeReport   0.000038     0.000039  flashggTagSorterMCScaleLowR9EBDown01sigma
+TimeReport   0.001622     0.001635  flashggPrefireDiPhotonsMCSmearLowR9EBRhoDown01sigma
+TimeReport   0.000554     0.000559  flashggPreselectedDiPhotonsMCSmearLowR9EBRhoDown01sigma
+TimeReport   0.006578     0.006631  flashggDiPhotonMVAMCSmearLowR9EBRhoDown01sigma
+TimeReport   0.000851     0.000858  flashggVHhadMVAMCSmearLowR9EBRhoDown01sigma
+TimeReport   0.000243     0.000244  flashggHHWWggTagMCSmearLowR9EBRhoDown01sigma
+TimeReport   0.000044     0.000045  flashggTagSorterMCSmearLowR9EBRhoDown01sigma
+TimeReport   0.001421     0.001433  flashggPrefireDiPhotonsMCSmearLowR9EBPhiDown01sigma
+TimeReport   0.000851     0.000857  flashggPreselectedDiPhotonsMCSmearLowR9EBPhiDown01sigma
+TimeReport   0.006813     0.006868  flashggDiPhotonMVAMCSmearLowR9EBPhiDown01sigma
+TimeReport   0.000620     0.000625  flashggVHhadMVAMCSmearLowR9EBPhiDown01sigma
+TimeReport   0.000180     0.000182  flashggHHWWggTagMCSmearLowR9EBPhiDown01sigma
+TimeReport   0.000037     0.000038  flashggTagSorterMCSmearLowR9EBPhiDown01sigma
+TimeReport   0.001615     0.001628  flashggPrefireDiPhotonsShowerShapeLowR9EEDown01sigma
+TimeReport   0.000522     0.000526  flashggPreselectedDiPhotonsShowerShapeLowR9EEDown01sigma
+TimeReport   0.007696     0.007758  flashggDiPhotonMVAShowerShapeLowR9EEDown01sigma
+TimeReport   0.000237     0.000239  flashggVHhadMVAShowerShapeLowR9EEDown01sigma
+TimeReport   0.000222     0.000224  flashggHHWWggTagShowerShapeLowR9EEDown01sigma
+TimeReport   0.000027     0.000027  flashggTagSorterShowerShapeLowR9EEDown01sigma
+TimeReport   0.001539     0.001552  flashggPrefireDiPhotonsMCScaleLowR9EEDown01sigma
+TimeReport   0.000494     0.000498  flashggPreselectedDiPhotonsMCScaleLowR9EEDown01sigma
+TimeReport   0.008597     0.008666  flashggDiPhotonMVAMCScaleLowR9EEDown01sigma
+TimeReport   0.000598     0.000603  flashggVHhadMVAMCScaleLowR9EEDown01sigma
+TimeReport   0.000279     0.000282  flashggHHWWggTagMCScaleLowR9EEDown01sigma
+TimeReport   0.000059     0.000060  flashggTagSorterMCScaleLowR9EEDown01sigma
+TimeReport   0.001643     0.001657  flashggPrefireDiPhotonsMCSmearLowR9EERhoDown01sigma
+TimeReport   0.000705     0.000711  flashggPreselectedDiPhotonsMCSmearLowR9EERhoDown01sigma
+TimeReport   0.008279     0.008345  flashggDiPhotonMVAMCSmearLowR9EERhoDown01sigma
+TimeReport   0.000377     0.000380  flashggVHhadMVAMCSmearLowR9EERhoDown01sigma
+TimeReport   0.000313     0.000316  flashggHHWWggTagMCSmearLowR9EERhoDown01sigma
+TimeReport   0.000028     0.000029  flashggTagSorterMCSmearLowR9EERhoDown01sigma
+TimeReport   0.001546     0.001558  flashggPrefireDiPhotonsMCSmearLowR9EEPhiDown01sigma
+TimeReport   0.000729     0.000735  flashggPreselectedDiPhotonsMCSmearLowR9EEPhiDown01sigma
+TimeReport   0.007588     0.007650  flashggDiPhotonMVAMCSmearLowR9EEPhiDown01sigma
+TimeReport   0.000801     0.000807  flashggVHhadMVAMCSmearLowR9EEPhiDown01sigma
+TimeReport   0.000241     0.000243  flashggHHWWggTagMCSmearLowR9EEPhiDown01sigma
+TimeReport   0.000029     0.000029  flashggTagSorterMCSmearLowR9EEPhiDown01sigma
+TimeReport   0.001649     0.001663  flashggPrefireDiPhotonsJECUp01sigma
+TimeReport   0.000575     0.000579  flashggPreselectedDiPhotonsJECUp01sigma
+TimeReport   0.007867     0.007930  flashggDiPhotonMVAJECUp01sigma
+TimeReport   0.000897     0.000904  flashggVHhadMVAJECUp01sigma
+TimeReport   0.000205     0.000207  flashggHHWWggTagJECUp01sigma
+TimeReport   0.000107     0.000108  flashggTagSorterJECUp01sigma
+TimeReport   0.001639     0.001653  flashggPrefireDiPhotonsJERUp01sigma
+TimeReport   0.000425     0.000428  flashggPreselectedDiPhotonsJERUp01sigma
+TimeReport   0.007852     0.007915  flashggDiPhotonMVAJERUp01sigma
+TimeReport   0.000483     0.000487  flashggVHhadMVAJERUp01sigma
+TimeReport   0.000188     0.000189  flashggHHWWggTagJERUp01sigma
+TimeReport   0.000091     0.000091  flashggTagSorterJERUp01sigma
+TimeReport   0.001546     0.001558  flashggPrefireDiPhotonsPUJIDShiftUp01sigma
+TimeReport   0.000662     0.000668  flashggPreselectedDiPhotonsPUJIDShiftUp01sigma
+TimeReport   0.006993     0.007049  flashggDiPhotonMVAPUJIDShiftUp01sigma
+TimeReport   0.001125     0.001134  flashggVHhadMVAPUJIDShiftUp01sigma
+TimeReport   0.000279     0.000281  flashggHHWWggTagPUJIDShiftUp01sigma
+TimeReport   0.000028     0.000028  flashggTagSorterPUJIDShiftUp01sigma
+TimeReport   0.001767     0.001782  flashggPrefireDiPhotonsJECDown01sigma
+TimeReport   0.000769     0.000775  flashggPreselectedDiPhotonsJECDown01sigma
+TimeReport   0.007721     0.007783  flashggDiPhotonMVAJECDown01sigma
+TimeReport   0.000499     0.000503  flashggVHhadMVAJECDown01sigma
+TimeReport   0.000230     0.000232  flashggHHWWggTagJECDown01sigma
+TimeReport   0.000071     0.000072  flashggTagSorterJECDown01sigma
+TimeReport   0.001647     0.001661  flashggPrefireDiPhotonsJERDown01sigma
+TimeReport   0.000417     0.000421  flashggPreselectedDiPhotonsJERDown01sigma
+TimeReport   0.007642     0.007704  flashggDiPhotonMVAJERDown01sigma
+TimeReport   0.001958     0.001974  flashggVHhadMVAJERDown01sigma
+TimeReport   0.000242     0.000244  flashggHHWWggTagJERDown01sigma
+TimeReport   0.000079     0.000080  flashggTagSorterJERDown01sigma
+TimeReport   0.001778     0.001792  flashggPrefireDiPhotonsPUJIDShiftDown01sigma
+TimeReport   0.000579     0.000583  flashggPreselectedDiPhotonsPUJIDShiftDown01sigma
+TimeReport   0.007399     0.007458  flashggDiPhotonMVAPUJIDShiftDown01sigma
+TimeReport   0.000276     0.000278  flashggVHhadMVAPUJIDShiftDown01sigma
+TimeReport   0.000204     0.000206  flashggHHWWggTagPUJIDShiftDown01sigma
+TimeReport   0.000027     0.000027  flashggTagSorterPUJIDShiftDown01sigma
+TimeReport   0.001526     0.001538  flashggPrefireDiPhotonsmetJecUncertaintyUp01sigma
+TimeReport   0.000562     0.000567  flashggPreselectedDiPhotonsmetJecUncertaintyUp01sigma
+TimeReport   0.007153     0.007211  flashggDiPhotonMVAmetJecUncertaintyUp01sigma
+TimeReport   0.000392     0.000395  flashggVHhadMVAmetJecUncertaintyUp01sigma
+TimeReport   0.000221     0.000222  flashggHHWWggTagmetJecUncertaintyUp01sigma
+TimeReport   0.000029     0.000030  flashggTagSortermetJecUncertaintyUp01sigma
+TimeReport   0.001715     0.001729  flashggPrefireDiPhotonsmetJerUncertaintyUp01sigma
+TimeReport   0.000476     0.000480  flashggPreselectedDiPhotonsmetJerUncertaintyUp01sigma
+TimeReport   0.007210     0.007269  flashggDiPhotonMVAmetJerUncertaintyUp01sigma
+TimeReport   0.000671     0.000677  flashggVHhadMVAmetJerUncertaintyUp01sigma
+TimeReport   0.000162     0.000163  flashggHHWWggTagmetJerUncertaintyUp01sigma
+TimeReport   0.000049     0.000050  flashggTagSortermetJerUncertaintyUp01sigma
+TimeReport   0.001610     0.001623  flashggPrefireDiPhotonsmetPhoUncertaintyUp01sigma
+TimeReport   0.000759     0.000765  flashggPreselectedDiPhotonsmetPhoUncertaintyUp01sigma
+TimeReport   0.008471     0.008539  flashggDiPhotonMVAmetPhoUncertaintyUp01sigma
+TimeReport   0.000830     0.000837  flashggVHhadMVAmetPhoUncertaintyUp01sigma
+TimeReport   0.000166     0.000167  flashggHHWWggTagmetPhoUncertaintyUp01sigma
+TimeReport   0.000114     0.000115  flashggTagSortermetPhoUncertaintyUp01sigma
+TimeReport   0.001677     0.001690  flashggPrefireDiPhotonsmetUncUncertaintyUp01sigma
+TimeReport   0.000543     0.000548  flashggPreselectedDiPhotonsmetUncUncertaintyUp01sigma
+TimeReport   0.007122     0.007180  flashggDiPhotonMVAmetUncUncertaintyUp01sigma
+TimeReport   0.000958     0.000966  flashggVHhadMVAmetUncUncertaintyUp01sigma
+TimeReport   0.000259     0.000261  flashggHHWWggTagmetUncUncertaintyUp01sigma
+TimeReport   0.000028     0.000028  flashggTagSortermetUncUncertaintyUp01sigma
+TimeReport   0.001640     0.001654  flashggPrefireDiPhotonsmetJecUncertaintyDown01sigma
+TimeReport   0.000850     0.000857  flashggPreselectedDiPhotonsmetJecUncertaintyDown01sigma
+TimeReport   0.007443     0.007503  flashggDiPhotonMVAmetJecUncertaintyDown01sigma
+TimeReport   0.000217     0.000219  flashggVHhadMVAmetJecUncertaintyDown01sigma
+TimeReport   0.000202     0.000204  flashggHHWWggTagmetJecUncertaintyDown01sigma
+TimeReport   0.000028     0.000028  flashggTagSortermetJecUncertaintyDown01sigma
+TimeReport   0.001590     0.001603  flashggPrefireDiPhotonsmetJerUncertaintyDown01sigma
+TimeReport   0.000599     0.000604  flashggPreselectedDiPhotonsmetJerUncertaintyDown01sigma
+TimeReport   0.007282     0.007340  flashggDiPhotonMVAmetJerUncertaintyDown01sigma
+TimeReport   0.000644     0.000649  flashggVHhadMVAmetJerUncertaintyDown01sigma
+TimeReport   0.000198     0.000200  flashggHHWWggTagmetJerUncertaintyDown01sigma
+TimeReport   0.000027     0.000028  flashggTagSortermetJerUncertaintyDown01sigma
+TimeReport   0.001611     0.001624  flashggPrefireDiPhotonsmetPhoUncertaintyDown01sigma
+TimeReport   0.000516     0.000520  flashggPreselectedDiPhotonsmetPhoUncertaintyDown01sigma
+TimeReport   0.008974     0.009047  flashggDiPhotonMVAmetPhoUncertaintyDown01sigma
+TimeReport   0.000995     0.001003  flashggVHhadMVAmetPhoUncertaintyDown01sigma
+TimeReport   0.000265     0.000267  flashggHHWWggTagmetPhoUncertaintyDown01sigma
+TimeReport   0.000028     0.000028  flashggTagSortermetPhoUncertaintyDown01sigma
+TimeReport   0.001734     0.001748  flashggPrefireDiPhotonsmetUncUncertaintyDown01sigma
+TimeReport   0.000530     0.000534  flashggPreselectedDiPhotonsmetUncUncertaintyDown01sigma
+TimeReport   0.007737     0.007800  flashggDiPhotonMVAmetUncUncertaintyDown01sigma
+TimeReport   0.000242     0.000244  flashggVHhadMVAmetUncUncertaintyDown01sigma
+TimeReport   0.000193     0.000194  flashggHHWWggTagmetUncUncertaintyDown01sigma
+TimeReport   0.000029     0.000029  flashggTagSortermetUncUncertaintyDown01sigma
+TimeReport   0.000159     0.000161  flashggSystTagMerger
+TimeReport   0.000030     0.000030  HardProcessFinalStateFilter
+TimeReport   0.062208     0.066962  tagsDumper
+TimeReport  per event    per visit  Name
+
+TimeReport ---------- Module Summary ---[Real sec]----
+TimeReport  per event     per exec    per visit  Name
+TimeReport   0.000030     0.000030     0.000030  HardProcessFinalStateFilter
+TimeReport   0.000006     0.000006     0.000006  TriggerResults
+TimeReport   0.000023     0.000023     0.000023  ak4PFCHSL1FastL2L3Corrector
+TimeReport   0.000018     0.000018     0.000018  ak4PFCHSL1FastjetCorrector
+TimeReport   0.000094     0.000095     0.000095  ak4PFCHSL2RelativeCorrector
+TimeReport   0.011931     0.012028     0.012028  ak4PFCHSL3AbsoluteCorrector
+TimeReport   0.009663     0.009741     0.009741  flashggDiPhotonMVA
+TimeReport   0.006633     0.006686     0.006686  flashggDiPhotonMVAFNUFEBDown01sigma
+TimeReport   0.008010     0.008075     0.008075  flashggDiPhotonMVAFNUFEBUp01sigma
+TimeReport   0.006810     0.006865     0.006865  flashggDiPhotonMVAFNUFEEDown01sigma
+TimeReport   0.008565     0.008634     0.008634  flashggDiPhotonMVAFNUFEEUp01sigma
+TimeReport   0.007721     0.007783     0.007783  flashggDiPhotonMVAJECDown01sigma
+TimeReport   0.007867     0.007930     0.007930  flashggDiPhotonMVAJECUp01sigma
+TimeReport   0.007642     0.007704     0.007704  flashggDiPhotonMVAJERDown01sigma
+TimeReport   0.007852     0.007915     0.007915  flashggDiPhotonMVAJERUp01sigma
+TimeReport   0.008808     0.008879     0.008879  flashggDiPhotonMVAMCScaleGain1EBDown01sigma
+TimeReport   0.008337     0.008404     0.008404  flashggDiPhotonMVAMCScaleGain1EBUp01sigma
+TimeReport   0.009351     0.009427     0.009427  flashggDiPhotonMVAMCScaleGain6EBDown01sigma
+TimeReport   0.008252     0.008319     0.008319  flashggDiPhotonMVAMCScaleGain6EBUp01sigma
+TimeReport   0.007849     0.007913     0.007913  flashggDiPhotonMVAMCScaleHighR9EBDown01sigma
+TimeReport   0.010038     0.010119     0.010119  flashggDiPhotonMVAMCScaleHighR9EBUp01sigma
+TimeReport   0.007097     0.007155     0.007155  flashggDiPhotonMVAMCScaleHighR9EEDown01sigma
+TimeReport   0.007336     0.007395     0.007395  flashggDiPhotonMVAMCScaleHighR9EEUp01sigma
+TimeReport   0.006729     0.006783     0.006783  flashggDiPhotonMVAMCScaleLowR9EBDown01sigma
+TimeReport   0.007875     0.007938     0.007938  flashggDiPhotonMVAMCScaleLowR9EBUp01sigma
+TimeReport   0.008597     0.008666     0.008666  flashggDiPhotonMVAMCScaleLowR9EEDown01sigma
+TimeReport   0.007962     0.008026     0.008026  flashggDiPhotonMVAMCScaleLowR9EEUp01sigma
+TimeReport   0.007192     0.007250     0.007250  flashggDiPhotonMVAMCSmearHighR9EBPhiDown01sigma
+TimeReport   0.006808     0.006863     0.006863  flashggDiPhotonMVAMCSmearHighR9EBPhiUp01sigma
+TimeReport   0.006950     0.007006     0.007006  flashggDiPhotonMVAMCSmearHighR9EBRhoDown01sigma
+TimeReport   0.008546     0.008615     0.008615  flashggDiPhotonMVAMCSmearHighR9EBRhoUp01sigma
+TimeReport   0.008663     0.008733     0.008733  flashggDiPhotonMVAMCSmearHighR9EEPhiDown01sigma
+TimeReport   0.007804     0.007866     0.007866  flashggDiPhotonMVAMCSmearHighR9EEPhiUp01sigma
+TimeReport   0.008229     0.008295     0.008295  flashggDiPhotonMVAMCSmearHighR9EERhoDown01sigma
+TimeReport   0.006837     0.006892     0.006892  flashggDiPhotonMVAMCSmearHighR9EERhoUp01sigma
+TimeReport   0.006813     0.006868     0.006868  flashggDiPhotonMVAMCSmearLowR9EBPhiDown01sigma
+TimeReport   0.010049     0.010130     0.010130  flashggDiPhotonMVAMCSmearLowR9EBPhiUp01sigma
+TimeReport   0.006578     0.006631     0.006631  flashggDiPhotonMVAMCSmearLowR9EBRhoDown01sigma
+TimeReport   0.007031     0.007088     0.007088  flashggDiPhotonMVAMCSmearLowR9EBRhoUp01sigma
+TimeReport   0.007588     0.007650     0.007650  flashggDiPhotonMVAMCSmearLowR9EEPhiDown01sigma
+TimeReport   0.006266     0.006317     0.006317  flashggDiPhotonMVAMCSmearLowR9EEPhiUp01sigma
+TimeReport   0.008279     0.008345     0.008345  flashggDiPhotonMVAMCSmearLowR9EERhoDown01sigma
+TimeReport   0.007233     0.007292     0.007292  flashggDiPhotonMVAMCSmearLowR9EERhoUp01sigma
+TimeReport   0.006060     0.006109     0.006109  flashggDiPhotonMVAMaterialCentralBarrelDown01sigma
+TimeReport   0.009987     0.010068     0.010068  flashggDiPhotonMVAMaterialCentralBarrelUp01sigma
+TimeReport   0.008530     0.008599     0.008599  flashggDiPhotonMVAMaterialForwardDown01sigma
+TimeReport   0.010135     0.010216     0.010216  flashggDiPhotonMVAMaterialForwardUp01sigma
+TimeReport   0.007638     0.007699     0.007699  flashggDiPhotonMVAMaterialOuterBarrelDown01sigma
+TimeReport   0.009412     0.009488     0.009488  flashggDiPhotonMVAMaterialOuterBarrelUp01sigma
+TimeReport   0.006843     0.006898     0.006898  flashggDiPhotonMVAMvaShiftDown01sigma
+TimeReport   0.009156     0.009230     0.009230  flashggDiPhotonMVAMvaShiftUp01sigma
+TimeReport   0.007399     0.007458     0.007458  flashggDiPhotonMVAPUJIDShiftDown01sigma
+TimeReport   0.006993     0.007049     0.007049  flashggDiPhotonMVAPUJIDShiftUp01sigma
+TimeReport   0.007331     0.007390     0.007390  flashggDiPhotonMVAShowerShapeHighR9EBDown01sigma
+TimeReport   0.006463     0.006515     0.006515  flashggDiPhotonMVAShowerShapeHighR9EBUp01sigma
+TimeReport   0.008775     0.008846     0.008846  flashggDiPhotonMVAShowerShapeHighR9EEDown01sigma
+TimeReport   0.006322     0.006373     0.006373  flashggDiPhotonMVAShowerShapeHighR9EEUp01sigma
+TimeReport   0.008122     0.008188     0.008188  flashggDiPhotonMVAShowerShapeLowR9EBDown01sigma
+TimeReport   0.008077     0.008142     0.008142  flashggDiPhotonMVAShowerShapeLowR9EBUp01sigma
+TimeReport   0.007696     0.007758     0.007758  flashggDiPhotonMVAShowerShapeLowR9EEDown01sigma
+TimeReport   0.008453     0.008521     0.008521  flashggDiPhotonMVAShowerShapeLowR9EEUp01sigma
+TimeReport   0.008232     0.008298     0.008298  flashggDiPhotonMVASigmaEOverEShiftDown01sigma
+TimeReport   0.010062     0.010144     0.010144  flashggDiPhotonMVASigmaEOverEShiftUp01sigma
+TimeReport   0.007443     0.007503     0.007503  flashggDiPhotonMVAmetJecUncertaintyDown01sigma
+TimeReport   0.007153     0.007211     0.007211  flashggDiPhotonMVAmetJecUncertaintyUp01sigma
+TimeReport   0.007282     0.007340     0.007340  flashggDiPhotonMVAmetJerUncertaintyDown01sigma
+TimeReport   0.007210     0.007269     0.007269  flashggDiPhotonMVAmetJerUncertaintyUp01sigma
+TimeReport   0.008974     0.009047     0.009047  flashggDiPhotonMVAmetPhoUncertaintyDown01sigma
+TimeReport   0.008471     0.008539     0.008539  flashggDiPhotonMVAmetPhoUncertaintyUp01sigma
+TimeReport   0.007737     0.007800     0.007800  flashggDiPhotonMVAmetUncUncertaintyDown01sigma
+TimeReport   0.007122     0.007180     0.007180  flashggDiPhotonMVAmetUncUncertaintyUp01sigma
+TimeReport   0.386059     0.389173     0.389173  flashggDiPhotonSystematics
+TimeReport   0.004071     0.004104     0.004104  flashggDiPhotons
+TimeReport   1.902606     1.917949     1.917949  flashggDifferentialPhoIdInputsCorrection
+TimeReport   0.003351     0.003378     0.003378  flashggElectronSystematics
+TimeReport   0.002504     0.002524     0.002524  flashggHHWWggTag
+TimeReport   0.000183     0.000184     0.000184  flashggHHWWggTagFNUFEBDown01sigma
+TimeReport   0.000287     0.000289     0.000289  flashggHHWWggTagFNUFEBUp01sigma
+TimeReport   0.000162     0.000163     0.000163  flashggHHWWggTagFNUFEEDown01sigma
+TimeReport   0.000416     0.000419     0.000419  flashggHHWWggTagFNUFEEUp01sigma
+TimeReport   0.000230     0.000232     0.000232  flashggHHWWggTagJECDown01sigma
+TimeReport   0.000205     0.000207     0.000207  flashggHHWWggTagJECUp01sigma
+TimeReport   0.000242     0.000244     0.000244  flashggHHWWggTagJERDown01sigma
+TimeReport   0.000188     0.000189     0.000189  flashggHHWWggTagJERUp01sigma
+TimeReport   0.000187     0.000189     0.000189  flashggHHWWggTagMCScaleGain1EBDown01sigma
+TimeReport   0.000286     0.000288     0.000288  flashggHHWWggTagMCScaleGain1EBUp01sigma
+TimeReport   0.000381     0.000384     0.000384  flashggHHWWggTagMCScaleGain6EBDown01sigma
+TimeReport   0.000214     0.000215     0.000215  flashggHHWWggTagMCScaleGain6EBUp01sigma
+TimeReport   0.000165     0.000166     0.000166  flashggHHWWggTagMCScaleHighR9EBDown01sigma
+TimeReport   0.000175     0.000176     0.000176  flashggHHWWggTagMCScaleHighR9EBUp01sigma
+TimeReport   0.000282     0.000284     0.000284  flashggHHWWggTagMCScaleHighR9EEDown01sigma
+TimeReport   0.000281     0.000284     0.000284  flashggHHWWggTagMCScaleHighR9EEUp01sigma
+TimeReport   0.000176     0.000177     0.000177  flashggHHWWggTagMCScaleLowR9EBDown01sigma
+TimeReport   0.000317     0.000320     0.000320  flashggHHWWggTagMCScaleLowR9EBUp01sigma
+TimeReport   0.000279     0.000282     0.000282  flashggHHWWggTagMCScaleLowR9EEDown01sigma
+TimeReport   0.000247     0.000249     0.000249  flashggHHWWggTagMCScaleLowR9EEUp01sigma
+TimeReport   0.000189     0.000190     0.000190  flashggHHWWggTagMCSmearHighR9EBPhiDown01sigma
+TimeReport   0.000202     0.000204     0.000204  flashggHHWWggTagMCSmearHighR9EBPhiUp01sigma
+TimeReport   0.000164     0.000165     0.000165  flashggHHWWggTagMCSmearHighR9EBRhoDown01sigma
+TimeReport   0.000164     0.000166     0.000166  flashggHHWWggTagMCSmearHighR9EBRhoUp01sigma
+TimeReport   0.000303     0.000305     0.000305  flashggHHWWggTagMCSmearHighR9EEPhiDown01sigma
+TimeReport   0.000179     0.000180     0.000180  flashggHHWWggTagMCSmearHighR9EEPhiUp01sigma
+TimeReport   0.000252     0.000254     0.000254  flashggHHWWggTagMCSmearHighR9EERhoDown01sigma
+TimeReport   0.000204     0.000205     0.000205  flashggHHWWggTagMCSmearHighR9EERhoUp01sigma
+TimeReport   0.000180     0.000182     0.000182  flashggHHWWggTagMCSmearLowR9EBPhiDown01sigma
+TimeReport   0.000182     0.000183     0.000183  flashggHHWWggTagMCSmearLowR9EBPhiUp01sigma
+TimeReport   0.000243     0.000244     0.000244  flashggHHWWggTagMCSmearLowR9EBRhoDown01sigma
+TimeReport   0.000165     0.000166     0.000166  flashggHHWWggTagMCSmearLowR9EBRhoUp01sigma
+TimeReport   0.000241     0.000243     0.000243  flashggHHWWggTagMCSmearLowR9EEPhiDown01sigma
+TimeReport   0.000164     0.000165     0.000165  flashggHHWWggTagMCSmearLowR9EEPhiUp01sigma
+TimeReport   0.000313     0.000316     0.000316  flashggHHWWggTagMCSmearLowR9EERhoDown01sigma
+TimeReport   0.000223     0.000225     0.000225  flashggHHWWggTagMCSmearLowR9EERhoUp01sigma
+TimeReport   0.000236     0.000238     0.000238  flashggHHWWggTagMaterialCentralBarrelDown01sigma
+TimeReport   0.000163     0.000164     0.000164  flashggHHWWggTagMaterialCentralBarrelUp01sigma
+TimeReport   0.000222     0.000224     0.000224  flashggHHWWggTagMaterialForwardDown01sigma
+TimeReport   0.000362     0.000365     0.000365  flashggHHWWggTagMaterialForwardUp01sigma
+TimeReport   0.000162     0.000163     0.000163  flashggHHWWggTagMaterialOuterBarrelDown01sigma
+TimeReport   0.000332     0.000335     0.000335  flashggHHWWggTagMaterialOuterBarrelUp01sigma
+TimeReport   0.000229     0.000230     0.000230  flashggHHWWggTagMvaShiftDown01sigma
+TimeReport   0.000236     0.000238     0.000238  flashggHHWWggTagMvaShiftUp01sigma
+TimeReport   0.000204     0.000206     0.000206  flashggHHWWggTagPUJIDShiftDown01sigma
+TimeReport   0.000279     0.000281     0.000281  flashggHHWWggTagPUJIDShiftUp01sigma
+TimeReport   0.000274     0.000276     0.000276  flashggHHWWggTagShowerShapeHighR9EBDown01sigma
+TimeReport   0.000267     0.000269     0.000269  flashggHHWWggTagShowerShapeHighR9EBUp01sigma
+TimeReport   0.000184     0.000185     0.000185  flashggHHWWggTagShowerShapeHighR9EEDown01sigma
+TimeReport   0.000230     0.000232     0.000232  flashggHHWWggTagShowerShapeHighR9EEUp01sigma
+TimeReport   0.000201     0.000202     0.000202  flashggHHWWggTagShowerShapeLowR9EBDown01sigma
+TimeReport   0.000206     0.000208     0.000208  flashggHHWWggTagShowerShapeLowR9EBUp01sigma
+TimeReport   0.000222     0.000224     0.000224  flashggHHWWggTagShowerShapeLowR9EEDown01sigma
+TimeReport   0.000182     0.000184     0.000184  flashggHHWWggTagShowerShapeLowR9EEUp01sigma
+TimeReport   0.000191     0.000193     0.000193  flashggHHWWggTagSigmaEOverEShiftDown01sigma
+TimeReport   0.000291     0.000294     0.000294  flashggHHWWggTagSigmaEOverEShiftUp01sigma
+TimeReport   0.000202     0.000204     0.000204  flashggHHWWggTagmetJecUncertaintyDown01sigma
+TimeReport   0.000221     0.000222     0.000222  flashggHHWWggTagmetJecUncertaintyUp01sigma
+TimeReport   0.000198     0.000200     0.000200  flashggHHWWggTagmetJerUncertaintyDown01sigma
+TimeReport   0.000162     0.000163     0.000163  flashggHHWWggTagmetJerUncertaintyUp01sigma
+TimeReport   0.000265     0.000267     0.000267  flashggHHWWggTagmetPhoUncertaintyDown01sigma
+TimeReport   0.000166     0.000167     0.000167  flashggHHWWggTagmetPhoUncertaintyUp01sigma
+TimeReport   0.000193     0.000194     0.000194  flashggHHWWggTagmetUncUncertaintyDown01sigma
+TimeReport   0.000259     0.000261     0.000261  flashggHHWWggTagmetUncUncertaintyUp01sigma
+TimeReport   0.089304     0.090024     0.090024  flashggJetSystematics0
+TimeReport   0.004788     0.004826     0.004826  flashggJetSystematics1
+TimeReport   0.003391     0.003419     0.003419  flashggJetSystematics10
+TimeReport   0.003437     0.003465     0.003465  flashggJetSystematics11
+TimeReport   0.003258     0.003285     0.003285  flashggJetSystematics2
+TimeReport   0.004122     0.004155     0.004155  flashggJetSystematics3
+TimeReport   0.003455     0.003483     0.003483  flashggJetSystematics4
+TimeReport   0.003208     0.003234     0.003234  flashggJetSystematics5
+TimeReport   0.003269     0.003295     0.003295  flashggJetSystematics6
+TimeReport   0.003376     0.003403     0.003403  flashggJetSystematics7
+TimeReport   0.003216     0.003242     0.003242  flashggJetSystematics8
+TimeReport   0.003485     0.003513     0.003513  flashggJetSystematics9
+TimeReport   0.000703     0.000703     0.000703  flashggMetFilters
+TimeReport   1.152319     1.161612     1.161612  flashggMetSystematics
+TimeReport   0.001526     0.001539     0.001539  flashggMuonSystematics
+TimeReport   0.001997     0.002013     0.002013  flashggPrefireDiPhotons
+TimeReport   0.001494     0.001506     0.001506  flashggPrefireDiPhotonsFNUFEBDown01sigma
+TimeReport   0.001731     0.001745     0.001745  flashggPrefireDiPhotonsFNUFEBUp01sigma
+TimeReport   0.001536     0.001548     0.001548  flashggPrefireDiPhotonsFNUFEEDown01sigma
+TimeReport   0.001865     0.001880     0.001880  flashggPrefireDiPhotonsFNUFEEUp01sigma
+TimeReport   0.001767     0.001782     0.001782  flashggPrefireDiPhotonsJECDown01sigma
+TimeReport   0.001649     0.001663     0.001663  flashggPrefireDiPhotonsJECUp01sigma
+TimeReport   0.001647     0.001661     0.001661  flashggPrefireDiPhotonsJERDown01sigma
+TimeReport   0.001639     0.001653     0.001653  flashggPrefireDiPhotonsJERUp01sigma
+TimeReport   0.001530     0.001543     0.001543  flashggPrefireDiPhotonsMCScaleGain1EBDown01sigma
+TimeReport   0.001462     0.001474     0.001474  flashggPrefireDiPhotonsMCScaleGain1EBUp01sigma
+TimeReport   0.001424     0.001436     0.001436  flashggPrefireDiPhotonsMCScaleGain6EBDown01sigma
+TimeReport   0.003060     0.003084     0.003084  flashggPrefireDiPhotonsMCScaleGain6EBUp01sigma
+TimeReport   0.001476     0.001487     0.001487  flashggPrefireDiPhotonsMCScaleHighR9EBDown01sigma
+TimeReport   0.001747     0.001761     0.001761  flashggPrefireDiPhotonsMCScaleHighR9EBUp01sigma
+TimeReport   0.001587     0.001600     0.001600  flashggPrefireDiPhotonsMCScaleHighR9EEDown01sigma
+TimeReport   0.001734     0.001748     0.001748  flashggPrefireDiPhotonsMCScaleHighR9EEUp01sigma
+TimeReport   0.001597     0.001610     0.001610  flashggPrefireDiPhotonsMCScaleLowR9EBDown01sigma
+TimeReport   0.001570     0.001583     0.001583  flashggPrefireDiPhotonsMCScaleLowR9EBUp01sigma
+TimeReport   0.001539     0.001552     0.001552  flashggPrefireDiPhotonsMCScaleLowR9EEDown01sigma
+TimeReport   0.001612     0.001624     0.001624  flashggPrefireDiPhotonsMCScaleLowR9EEUp01sigma
+TimeReport   0.001545     0.001557     0.001557  flashggPrefireDiPhotonsMCSmearHighR9EBPhiDown01sigma
+TimeReport   0.001531     0.001543     0.001543  flashggPrefireDiPhotonsMCSmearHighR9EBPhiUp01sigma
+TimeReport   0.001525     0.001538     0.001538  flashggPrefireDiPhotonsMCSmearHighR9EBRhoDown01sigma
+TimeReport   0.001490     0.001502     0.001502  flashggPrefireDiPhotonsMCSmearHighR9EBRhoUp01sigma
+TimeReport   0.001651     0.001665     0.001665  flashggPrefireDiPhotonsMCSmearHighR9EEPhiDown01sigma
+TimeReport   0.001469     0.001481     0.001481  flashggPrefireDiPhotonsMCSmearHighR9EEPhiUp01sigma
+TimeReport   0.001834     0.001849     0.001849  flashggPrefireDiPhotonsMCSmearHighR9EERhoDown01sigma
+TimeReport   0.001414     0.001425     0.001425  flashggPrefireDiPhotonsMCSmearHighR9EERhoUp01sigma
+TimeReport   0.001421     0.001433     0.001433  flashggPrefireDiPhotonsMCSmearLowR9EBPhiDown01sigma
+TimeReport   0.001573     0.001585     0.001585  flashggPrefireDiPhotonsMCSmearLowR9EBPhiUp01sigma
+TimeReport   0.001622     0.001635     0.001635  flashggPrefireDiPhotonsMCSmearLowR9EBRhoDown01sigma
+TimeReport   0.001566     0.001579     0.001579  flashggPrefireDiPhotonsMCSmearLowR9EBRhoUp01sigma
+TimeReport   0.001546     0.001558     0.001558  flashggPrefireDiPhotonsMCSmearLowR9EEPhiDown01sigma
+TimeReport   0.001626     0.001639     0.001639  flashggPrefireDiPhotonsMCSmearLowR9EEPhiUp01sigma
+TimeReport   0.001643     0.001657     0.001657  flashggPrefireDiPhotonsMCSmearLowR9EERhoDown01sigma
+TimeReport   0.001470     0.001482     0.001482  flashggPrefireDiPhotonsMCSmearLowR9EERhoUp01sigma
+TimeReport   0.001426     0.001437     0.001437  flashggPrefireDiPhotonsMaterialCentralBarrelDown01sigma
+TimeReport   0.001551     0.001563     0.001563  flashggPrefireDiPhotonsMaterialCentralBarrelUp01sigma
+TimeReport   0.001541     0.001553     0.001553  flashggPrefireDiPhotonsMaterialForwardDown01sigma
+TimeReport   0.001662     0.001675     0.001675  flashggPrefireDiPhotonsMaterialForwardUp01sigma
+TimeReport   0.001425     0.001437     0.001437  flashggPrefireDiPhotonsMaterialOuterBarrelDown01sigma
+TimeReport   0.001599     0.001612     0.001612  flashggPrefireDiPhotonsMaterialOuterBarrelUp01sigma
+TimeReport   0.001495     0.001507     0.001507  flashggPrefireDiPhotonsMvaShiftDown01sigma
+TimeReport   0.001830     0.001845     0.001845  flashggPrefireDiPhotonsMvaShiftUp01sigma
+TimeReport   0.001778     0.001792     0.001792  flashggPrefireDiPhotonsPUJIDShiftDown01sigma
+TimeReport   0.001546     0.001558     0.001558  flashggPrefireDiPhotonsPUJIDShiftUp01sigma
+TimeReport   0.001546     0.001558     0.001558  flashggPrefireDiPhotonsShowerShapeHighR9EBDown01sigma
+TimeReport   0.001561     0.001573     0.001573  flashggPrefireDiPhotonsShowerShapeHighR9EBUp01sigma
+TimeReport   0.001448     0.001460     0.001460  flashggPrefireDiPhotonsShowerShapeHighR9EEDown01sigma
+TimeReport   0.001531     0.001543     0.001543  flashggPrefireDiPhotonsShowerShapeHighR9EEUp01sigma
+TimeReport   0.001570     0.001583     0.001583  flashggPrefireDiPhotonsShowerShapeLowR9EBDown01sigma
+TimeReport   0.001525     0.001538     0.001538  flashggPrefireDiPhotonsShowerShapeLowR9EBUp01sigma
+TimeReport   0.001615     0.001628     0.001628  flashggPrefireDiPhotonsShowerShapeLowR9EEDown01sigma
+TimeReport   0.001519     0.001531     0.001531  flashggPrefireDiPhotonsShowerShapeLowR9EEUp01sigma
+TimeReport   0.001503     0.001515     0.001515  flashggPrefireDiPhotonsSigmaEOverEShiftDown01sigma
+TimeReport   0.001501     0.001513     0.001513  flashggPrefireDiPhotonsSigmaEOverEShiftUp01sigma
+TimeReport   0.001640     0.001654     0.001654  flashggPrefireDiPhotonsmetJecUncertaintyDown01sigma
+TimeReport   0.001526     0.001538     0.001538  flashggPrefireDiPhotonsmetJecUncertaintyUp01sigma
+TimeReport   0.001590     0.001603     0.001603  flashggPrefireDiPhotonsmetJerUncertaintyDown01sigma
+TimeReport   0.001715     0.001729     0.001729  flashggPrefireDiPhotonsmetJerUncertaintyUp01sigma
+TimeReport   0.001611     0.001624     0.001624  flashggPrefireDiPhotonsmetPhoUncertaintyDown01sigma
+TimeReport   0.001610     0.001623     0.001623  flashggPrefireDiPhotonsmetPhoUncertaintyUp01sigma
+TimeReport   0.001734     0.001748     0.001748  flashggPrefireDiPhotonsmetUncUncertaintyDown01sigma
+TimeReport   0.001677     0.001690     0.001690  flashggPrefireDiPhotonsmetUncUncertaintyUp01sigma
+TimeReport   0.005304     0.005347     0.005347  flashggPreselectedDiPhotons
+TimeReport   0.000536     0.000540     0.000540  flashggPreselectedDiPhotonsFNUFEBDown01sigma
+TimeReport   0.001178     0.001188     0.001188  flashggPreselectedDiPhotonsFNUFEBUp01sigma
+TimeReport   0.000715     0.000721     0.000721  flashggPreselectedDiPhotonsFNUFEEDown01sigma
+TimeReport   0.000956     0.000964     0.000964  flashggPreselectedDiPhotonsFNUFEEUp01sigma
+TimeReport   0.000769     0.000775     0.000775  flashggPreselectedDiPhotonsJECDown01sigma
+TimeReport   0.000575     0.000579     0.000579  flashggPreselectedDiPhotonsJECUp01sigma
+TimeReport   0.000417     0.000421     0.000421  flashggPreselectedDiPhotonsJERDown01sigma
+TimeReport   0.000425     0.000428     0.000428  flashggPreselectedDiPhotonsJERUp01sigma
+TimeReport   0.000480     0.000484     0.000484  flashggPreselectedDiPhotonsMCScaleGain1EBDown01sigma
+TimeReport   0.000523     0.000527     0.000527  flashggPreselectedDiPhotonsMCScaleGain1EBUp01sigma
+TimeReport   0.000339     0.000342     0.000342  flashggPreselectedDiPhotonsMCScaleGain6EBDown01sigma
+TimeReport   0.000569     0.000573     0.000573  flashggPreselectedDiPhotonsMCScaleGain6EBUp01sigma
+TimeReport   0.000787     0.000793     0.000793  flashggPreselectedDiPhotonsMCScaleHighR9EBDown01sigma
+TimeReport   0.000878     0.000885     0.000885  flashggPreselectedDiPhotonsMCScaleHighR9EBUp01sigma
+TimeReport   0.000744     0.000750     0.000750  flashggPreselectedDiPhotonsMCScaleHighR9EEDown01sigma
+TimeReport   0.001046     0.001054     0.001054  flashggPreselectedDiPhotonsMCScaleHighR9EEUp01sigma
+TimeReport   0.000379     0.000382     0.000382  flashggPreselectedDiPhotonsMCScaleLowR9EBDown01sigma
+TimeReport   0.000815     0.000821     0.000821  flashggPreselectedDiPhotonsMCScaleLowR9EBUp01sigma
+TimeReport   0.000494     0.000498     0.000498  flashggPreselectedDiPhotonsMCScaleLowR9EEDown01sigma
+TimeReport   0.000613     0.000618     0.000618  flashggPreselectedDiPhotonsMCScaleLowR9EEUp01sigma
+TimeReport   0.000734     0.000740     0.000740  flashggPreselectedDiPhotonsMCSmearHighR9EBPhiDown01sigma
+TimeReport   0.000552     0.000556     0.000556  flashggPreselectedDiPhotonsMCSmearHighR9EBPhiUp01sigma
+TimeReport   0.000618     0.000623     0.000623  flashggPreselectedDiPhotonsMCSmearHighR9EBRhoDown01sigma
+TimeReport   0.000578     0.000583     0.000583  flashggPreselectedDiPhotonsMCSmearHighR9EBRhoUp01sigma
+TimeReport   0.000626     0.000631     0.000631  flashggPreselectedDiPhotonsMCSmearHighR9EEPhiDown01sigma
+TimeReport   0.000829     0.000836     0.000836  flashggPreselectedDiPhotonsMCSmearHighR9EEPhiUp01sigma
+TimeReport   0.000617     0.000622     0.000622  flashggPreselectedDiPhotonsMCSmearHighR9EERhoDown01sigma
+TimeReport   0.000427     0.000430     0.000430  flashggPreselectedDiPhotonsMCSmearHighR9EERhoUp01sigma
+TimeReport   0.000851     0.000857     0.000857  flashggPreselectedDiPhotonsMCSmearLowR9EBPhiDown01sigma
+TimeReport   0.000555     0.000560     0.000560  flashggPreselectedDiPhotonsMCSmearLowR9EBPhiUp01sigma
+TimeReport   0.000554     0.000559     0.000559  flashggPreselectedDiPhotonsMCSmearLowR9EBRhoDown01sigma
+TimeReport   0.000824     0.000830     0.000830  flashggPreselectedDiPhotonsMCSmearLowR9EBRhoUp01sigma
+TimeReport   0.000729     0.000735     0.000735  flashggPreselectedDiPhotonsMCSmearLowR9EEPhiDown01sigma
+TimeReport   0.000429     0.000432     0.000432  flashggPreselectedDiPhotonsMCSmearLowR9EEPhiUp01sigma
+TimeReport   0.000705     0.000711     0.000711  flashggPreselectedDiPhotonsMCSmearLowR9EERhoDown01sigma
+TimeReport   0.000727     0.000733     0.000733  flashggPreselectedDiPhotonsMCSmearLowR9EERhoUp01sigma
+TimeReport   0.000507     0.000512     0.000512  flashggPreselectedDiPhotonsMaterialCentralBarrelDown01sigma
+TimeReport   0.000512     0.000516     0.000516  flashggPreselectedDiPhotonsMaterialCentralBarrelUp01sigma
+TimeReport   0.000543     0.000547     0.000547  flashggPreselectedDiPhotonsMaterialForwardDown01sigma
+TimeReport   0.000762     0.000769     0.000769  flashggPreselectedDiPhotonsMaterialForwardUp01sigma
+TimeReport   0.000344     0.000346     0.000346  flashggPreselectedDiPhotonsMaterialOuterBarrelDown01sigma
+TimeReport   0.000452     0.000455     0.000455  flashggPreselectedDiPhotonsMaterialOuterBarrelUp01sigma
+TimeReport   0.000444     0.000448     0.000448  flashggPreselectedDiPhotonsMvaShiftDown01sigma
+TimeReport   0.001384     0.001395     0.001395  flashggPreselectedDiPhotonsMvaShiftUp01sigma
+TimeReport   0.000579     0.000583     0.000583  flashggPreselectedDiPhotonsPUJIDShiftDown01sigma
+TimeReport   0.000662     0.000668     0.000668  flashggPreselectedDiPhotonsPUJIDShiftUp01sigma
+TimeReport   0.000731     0.000736     0.000736  flashggPreselectedDiPhotonsShowerShapeHighR9EBDown01sigma
+TimeReport   0.000385     0.000388     0.000388  flashggPreselectedDiPhotonsShowerShapeHighR9EBUp01sigma
+TimeReport   0.000511     0.000516     0.000516  flashggPreselectedDiPhotonsShowerShapeHighR9EEDown01sigma
+TimeReport   0.000630     0.000636     0.000636  flashggPreselectedDiPhotonsShowerShapeHighR9EEUp01sigma
+TimeReport   0.000430     0.000433     0.000433  flashggPreselectedDiPhotonsShowerShapeLowR9EBDown01sigma
+TimeReport   0.000562     0.000566     0.000566  flashggPreselectedDiPhotonsShowerShapeLowR9EBUp01sigma
+TimeReport   0.000522     0.000526     0.000526  flashggPreselectedDiPhotonsShowerShapeLowR9EEDown01sigma
+TimeReport   0.000432     0.000436     0.000436  flashggPreselectedDiPhotonsShowerShapeLowR9EEUp01sigma
+TimeReport   0.000463     0.000467     0.000467  flashggPreselectedDiPhotonsSigmaEOverEShiftDown01sigma
+TimeReport   0.000783     0.000790     0.000790  flashggPreselectedDiPhotonsSigmaEOverEShiftUp01sigma
+TimeReport   0.000850     0.000857     0.000857  flashggPreselectedDiPhotonsmetJecUncertaintyDown01sigma
+TimeReport   0.000562     0.000567     0.000567  flashggPreselectedDiPhotonsmetJecUncertaintyUp01sigma
+TimeReport   0.000599     0.000604     0.000604  flashggPreselectedDiPhotonsmetJerUncertaintyDown01sigma
+TimeReport   0.000476     0.000480     0.000480  flashggPreselectedDiPhotonsmetJerUncertaintyUp01sigma
+TimeReport   0.000516     0.000520     0.000520  flashggPreselectedDiPhotonsmetPhoUncertaintyDown01sigma
+TimeReport   0.000759     0.000765     0.000765  flashggPreselectedDiPhotonsmetPhoUncertaintyUp01sigma
+TimeReport   0.000530     0.000534     0.000534  flashggPreselectedDiPhotonsmetUncUncertaintyDown01sigma
+TimeReport   0.000543     0.000548     0.000548  flashggPreselectedDiPhotonsmetUncUncertaintyUp01sigma
+TimeReport   0.000159     0.000161     0.000161  flashggSystTagMerger
+TimeReport   0.000196     0.000198     0.000198  flashggTagSorter
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterFNUFEBDown01sigma
+TimeReport   0.000252     0.000254     0.000254  flashggTagSorterFNUFEBUp01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterFNUFEEDown01sigma
+TimeReport   0.000140     0.000141     0.000141  flashggTagSorterFNUFEEUp01sigma
+TimeReport   0.000071     0.000072     0.000072  flashggTagSorterJECDown01sigma
+TimeReport   0.000107     0.000108     0.000108  flashggTagSorterJECUp01sigma
+TimeReport   0.000079     0.000080     0.000080  flashggTagSorterJERDown01sigma
+TimeReport   0.000091     0.000091     0.000091  flashggTagSorterJERUp01sigma
+TimeReport   0.000064     0.000064     0.000064  flashggTagSorterMCScaleGain1EBDown01sigma
+TimeReport   0.000039     0.000039     0.000039  flashggTagSorterMCScaleGain1EBUp01sigma
+TimeReport   0.000132     0.000133     0.000133  flashggTagSorterMCScaleGain6EBDown01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterMCScaleGain6EBUp01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterMCScaleHighR9EBDown01sigma
+TimeReport   0.000030     0.000030     0.000030  flashggTagSorterMCScaleHighR9EBUp01sigma
+TimeReport   0.000027     0.000028     0.000028  flashggTagSorterMCScaleHighR9EEDown01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterMCScaleHighR9EEUp01sigma
+TimeReport   0.000038     0.000039     0.000039  flashggTagSorterMCScaleLowR9EBDown01sigma
+TimeReport   0.000031     0.000031     0.000031  flashggTagSorterMCScaleLowR9EBUp01sigma
+TimeReport   0.000059     0.000060     0.000060  flashggTagSorterMCScaleLowR9EEDown01sigma
+TimeReport   0.000040     0.000040     0.000040  flashggTagSorterMCScaleLowR9EEUp01sigma
+TimeReport   0.000027     0.000027     0.000027  flashggTagSorterMCSmearHighR9EBPhiDown01sigma
+TimeReport   0.000027     0.000027     0.000027  flashggTagSorterMCSmearHighR9EBPhiUp01sigma
+TimeReport   0.000107     0.000108     0.000108  flashggTagSorterMCSmearHighR9EBRhoDown01sigma
+TimeReport   0.000081     0.000082     0.000082  flashggTagSorterMCSmearHighR9EBRhoUp01sigma
+TimeReport   0.000027     0.000027     0.000027  flashggTagSorterMCSmearHighR9EEPhiDown01sigma
+TimeReport   0.000028     0.000029     0.000029  flashggTagSorterMCSmearHighR9EEPhiUp01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterMCSmearHighR9EERhoDown01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterMCSmearHighR9EERhoUp01sigma
+TimeReport   0.000037     0.000038     0.000038  flashggTagSorterMCSmearLowR9EBPhiDown01sigma
+TimeReport   0.000031     0.000031     0.000031  flashggTagSorterMCSmearLowR9EBPhiUp01sigma
+TimeReport   0.000044     0.000045     0.000045  flashggTagSorterMCSmearLowR9EBRhoDown01sigma
+TimeReport   0.000029     0.000030     0.000030  flashggTagSorterMCSmearLowR9EBRhoUp01sigma
+TimeReport   0.000029     0.000029     0.000029  flashggTagSorterMCSmearLowR9EEPhiDown01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterMCSmearLowR9EEPhiUp01sigma
+TimeReport   0.000028     0.000029     0.000029  flashggTagSorterMCSmearLowR9EERhoDown01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterMCSmearLowR9EERhoUp01sigma
+TimeReport   0.000029     0.000029     0.000029  flashggTagSorterMaterialCentralBarrelDown01sigma
+TimeReport   0.000060     0.000061     0.000061  flashggTagSorterMaterialCentralBarrelUp01sigma
+TimeReport   0.000029     0.000029     0.000029  flashggTagSorterMaterialForwardDown01sigma
+TimeReport   0.000027     0.000027     0.000027  flashggTagSorterMaterialForwardUp01sigma
+TimeReport   0.000027     0.000027     0.000027  flashggTagSorterMaterialOuterBarrelDown01sigma
+TimeReport   0.000029     0.000029     0.000029  flashggTagSorterMaterialOuterBarrelUp01sigma
+TimeReport   0.000027     0.000027     0.000027  flashggTagSorterMvaShiftDown01sigma
+TimeReport   0.000032     0.000032     0.000032  flashggTagSorterMvaShiftUp01sigma
+TimeReport   0.000027     0.000027     0.000027  flashggTagSorterPUJIDShiftDown01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterPUJIDShiftUp01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterShowerShapeHighR9EBDown01sigma
+TimeReport   0.000031     0.000031     0.000031  flashggTagSorterShowerShapeHighR9EBUp01sigma
+TimeReport   0.000027     0.000028     0.000028  flashggTagSorterShowerShapeHighR9EEDown01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterShowerShapeHighR9EEUp01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterShowerShapeLowR9EBDown01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSorterShowerShapeLowR9EBUp01sigma
+TimeReport   0.000027     0.000027     0.000027  flashggTagSorterShowerShapeLowR9EEDown01sigma
+TimeReport   0.000058     0.000058     0.000058  flashggTagSorterShowerShapeLowR9EEUp01sigma
+TimeReport   0.000027     0.000027     0.000027  flashggTagSorterSigmaEOverEShiftDown01sigma
+TimeReport   0.000027     0.000028     0.000028  flashggTagSorterSigmaEOverEShiftUp01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSortermetJecUncertaintyDown01sigma
+TimeReport   0.000029     0.000030     0.000030  flashggTagSortermetJecUncertaintyUp01sigma
+TimeReport   0.000027     0.000028     0.000028  flashggTagSortermetJerUncertaintyDown01sigma
+TimeReport   0.000049     0.000050     0.000050  flashggTagSortermetJerUncertaintyUp01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSortermetPhoUncertaintyDown01sigma
+TimeReport   0.000114     0.000115     0.000115  flashggTagSortermetPhoUncertaintyUp01sigma
+TimeReport   0.000029     0.000029     0.000029  flashggTagSortermetUncUncertaintyDown01sigma
+TimeReport   0.000028     0.000028     0.000028  flashggTagSortermetUncUncertaintyUp01sigma
+TimeReport   0.001428     0.001440     0.001440  flashggUnpackedJets
+TimeReport   0.000724     0.000730     0.000730  flashggVHhadMVA
+TimeReport   0.000409     0.000412     0.000412  flashggVHhadMVAFNUFEBDown01sigma
+TimeReport   0.000628     0.000633     0.000633  flashggVHhadMVAFNUFEBUp01sigma
+TimeReport   0.001257     0.001267     0.001267  flashggVHhadMVAFNUFEEDown01sigma
+TimeReport   0.001050     0.001058     0.001058  flashggVHhadMVAFNUFEEUp01sigma
+TimeReport   0.000499     0.000503     0.000503  flashggVHhadMVAJECDown01sigma
+TimeReport   0.000897     0.000904     0.000904  flashggVHhadMVAJECUp01sigma
+TimeReport   0.001958     0.001974     0.001974  flashggVHhadMVAJERDown01sigma
+TimeReport   0.000483     0.000487     0.000487  flashggVHhadMVAJERUp01sigma
+TimeReport   0.000895     0.000902     0.000902  flashggVHhadMVAMCScaleGain1EBDown01sigma
+TimeReport   0.000612     0.000617     0.000617  flashggVHhadMVAMCScaleGain1EBUp01sigma
+TimeReport   0.000343     0.000346     0.000346  flashggVHhadMVAMCScaleGain6EBDown01sigma
+TimeReport   0.000455     0.000459     0.000459  flashggVHhadMVAMCScaleGain6EBUp01sigma
+TimeReport   0.000542     0.000546     0.000546  flashggVHhadMVAMCScaleHighR9EBDown01sigma
+TimeReport   0.000631     0.000637     0.000637  flashggVHhadMVAMCScaleHighR9EBUp01sigma
+TimeReport   0.000686     0.000691     0.000691  flashggVHhadMVAMCScaleHighR9EEDown01sigma
+TimeReport   0.000448     0.000452     0.000452  flashggVHhadMVAMCScaleHighR9EEUp01sigma
+TimeReport   0.000592     0.000597     0.000597  flashggVHhadMVAMCScaleLowR9EBDown01sigma
+TimeReport   0.000514     0.000518     0.000518  flashggVHhadMVAMCScaleLowR9EBUp01sigma
+TimeReport   0.000598     0.000603     0.000603  flashggVHhadMVAMCScaleLowR9EEDown01sigma
+TimeReport   0.000313     0.000316     0.000316  flashggVHhadMVAMCScaleLowR9EEUp01sigma
+TimeReport   0.000463     0.000467     0.000467  flashggVHhadMVAMCSmearHighR9EBPhiDown01sigma
+TimeReport   0.000200     0.000202     0.000202  flashggVHhadMVAMCSmearHighR9EBPhiUp01sigma
+TimeReport   0.000704     0.000710     0.000710  flashggVHhadMVAMCSmearHighR9EBRhoDown01sigma
+TimeReport   0.000637     0.000642     0.000642  flashggVHhadMVAMCSmearHighR9EBRhoUp01sigma
+TimeReport   0.000542     0.000546     0.000546  flashggVHhadMVAMCSmearHighR9EEPhiDown01sigma
+TimeReport   0.000543     0.000547     0.000547  flashggVHhadMVAMCSmearHighR9EEPhiUp01sigma
+TimeReport   0.001159     0.001168     0.001168  flashggVHhadMVAMCSmearHighR9EERhoDown01sigma
+TimeReport   0.000462     0.000466     0.000466  flashggVHhadMVAMCSmearHighR9EERhoUp01sigma
+TimeReport   0.000620     0.000625     0.000625  flashggVHhadMVAMCSmearLowR9EBPhiDown01sigma
+TimeReport   0.000784     0.000791     0.000791  flashggVHhadMVAMCSmearLowR9EBPhiUp01sigma
+TimeReport   0.000851     0.000858     0.000858  flashggVHhadMVAMCSmearLowR9EBRhoDown01sigma
+TimeReport   0.000501     0.000505     0.000505  flashggVHhadMVAMCSmearLowR9EBRhoUp01sigma
+TimeReport   0.000801     0.000807     0.000807  flashggVHhadMVAMCSmearLowR9EEPhiDown01sigma
+TimeReport   0.000462     0.000465     0.000465  flashggVHhadMVAMCSmearLowR9EEPhiUp01sigma
+TimeReport   0.000377     0.000380     0.000380  flashggVHhadMVAMCSmearLowR9EERhoDown01sigma
+TimeReport   0.000445     0.000449     0.000449  flashggVHhadMVAMCSmearLowR9EERhoUp01sigma
+TimeReport   0.000382     0.000385     0.000385  flashggVHhadMVAMaterialCentralBarrelDown01sigma
+TimeReport   0.000519     0.000524     0.000524  flashggVHhadMVAMaterialCentralBarrelUp01sigma
+TimeReport   0.000617     0.000622     0.000622  flashggVHhadMVAMaterialForwardDown01sigma
+TimeReport   0.000491     0.000495     0.000495  flashggVHhadMVAMaterialForwardUp01sigma
+TimeReport   0.000486     0.000490     0.000490  flashggVHhadMVAMaterialOuterBarrelDown01sigma
+TimeReport   0.000858     0.000865     0.000865  flashggVHhadMVAMaterialOuterBarrelUp01sigma
+TimeReport   0.000441     0.000444     0.000444  flashggVHhadMVAMvaShiftDown01sigma
+TimeReport   0.000477     0.000480     0.000480  flashggVHhadMVAMvaShiftUp01sigma
+TimeReport   0.000276     0.000278     0.000278  flashggVHhadMVAPUJIDShiftDown01sigma
+TimeReport   0.001125     0.001134     0.001134  flashggVHhadMVAPUJIDShiftUp01sigma
+TimeReport   0.000852     0.000859     0.000859  flashggVHhadMVAShowerShapeHighR9EBDown01sigma
+TimeReport   0.000511     0.000515     0.000515  flashggVHhadMVAShowerShapeHighR9EBUp01sigma
+TimeReport   0.000495     0.000499     0.000499  flashggVHhadMVAShowerShapeHighR9EEDown01sigma
+TimeReport   0.000825     0.000832     0.000832  flashggVHhadMVAShowerShapeHighR9EEUp01sigma
+TimeReport   0.001055     0.001063     0.001063  flashggVHhadMVAShowerShapeLowR9EBDown01sigma
+TimeReport   0.001221     0.001231     0.001231  flashggVHhadMVAShowerShapeLowR9EBUp01sigma
+TimeReport   0.000237     0.000239     0.000239  flashggVHhadMVAShowerShapeLowR9EEDown01sigma
+TimeReport   0.000620     0.000625     0.000625  flashggVHhadMVAShowerShapeLowR9EEUp01sigma
+TimeReport   0.000524     0.000528     0.000528  flashggVHhadMVASigmaEOverEShiftDown01sigma
+TimeReport   0.000608     0.000613     0.000613  flashggVHhadMVASigmaEOverEShiftUp01sigma
+TimeReport   0.000217     0.000219     0.000219  flashggVHhadMVAmetJecUncertaintyDown01sigma
+TimeReport   0.000392     0.000395     0.000395  flashggVHhadMVAmetJecUncertaintyUp01sigma
+TimeReport   0.000644     0.000649     0.000649  flashggVHhadMVAmetJerUncertaintyDown01sigma
+TimeReport   0.000671     0.000677     0.000677  flashggVHhadMVAmetJerUncertaintyUp01sigma
+TimeReport   0.000995     0.001003     0.001003  flashggVHhadMVAmetPhoUncertaintyDown01sigma
+TimeReport   0.000830     0.000837     0.000837  flashggVHhadMVAmetPhoUncertaintyUp01sigma
+TimeReport   0.000242     0.000244     0.000244  flashggVHhadMVAmetUncUncertaintyDown01sigma
+TimeReport   0.000958     0.000966     0.000966  flashggVHhadMVAmetUncUncertaintyUp01sigma
+TimeReport   0.000010     0.000010     0.000010  p
+TimeReport   0.062208     0.066962     0.066962  tagsDumper
+TimeReport  per event     per exec    per visit  Name
+
+T---Report end!
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 XrdAdaptor           -w file_open                              1        1
+    2 fileAction           -s file_close                             1        1
+    3 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 XrdAdaptor           pre-events                        
+    2 fileAction           PostGlobalEndRun                  
+    3 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                 1                   1
+System                  3                   3
+
+dropped waiting message count 0
